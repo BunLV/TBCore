@@ -8,17 +8,9 @@
 
 Pod::Spec.new do |s|
   s.name             = "TBCore"
-  s.version          = "1.0.0"
-  s.summary          = "A short description of TBCore."
-
-# This description is used to generate tags and improve search results.
-#   * Think: What does it do? Why did you write it? What is the focus?
-#   * Try to keep it short, snappy and to the point.
-#   * Write the description between the DESC delimiters below.
-#   * Finally, don't worry about the indent, CocoaPods strips it!  
-  s.description      = <<-DESC
-                       DESC
-
+  s.version          = "0.0.1"
+  s.summary          = "TBCore is a iOS framework. You have beauty project and stable. It will down time development for you"
+  s.description      = "TBCore allows configure & create base to any iOS Project. Below are services needed to be implement basic funtion. so it's help to you can write short code and meanable. So you will the clear source code"
   s.homepage         = "https://github.com/BunLV/TBCore"
   # s.screenshots     = "www.example.com/screenshots_1", "www.example.com/screenshots_2"
   s.license          = 'MIT'
@@ -32,19 +24,20 @@ Pod::Spec.new do |s|
 # - - - - - - - - - - - - - - - - - - - - - - - Source files
   s.source_files = 'TBCore/*.h'
 
-  s.subspec 'TBCore/01-Define' do |ss|
-    ss.source_files = 'TBCore/01-Define/*.h'
-  end
+#  s.subspec 'TBCore/01-Define' do |ss|
+#    ss.source_files = 'TBCore/01-Define/*.h'
+#  end
 
 
 # - - - - - - - - - - - - - - - - - - - - - - - Bundle files
-  s.resource_bundles = {
-    'TBCore' => ['TBCore/99-Resouces/*.{png,xib,storyboad}']
-  }
+#  s.resource_bundles = {
+#    'TBCore' => ['TBCore/99-Resouces/*.{png,xib,storyboad}']
+#  }
 
 
 # - - - - - - - - - - - - - - - - - - - - - - - Public headers
-  s.public_header_files = 'TBCore/*.h', 'TBCore/01-Define/*.h'
+  s.public_header_files = 'TBCore/*.h'
+#, 'TBCore/01-Define/*.h'
 
 
 # - - - - - - - - - - - - - - - - - - - - - - - Frameworks
