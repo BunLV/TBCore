@@ -1,0 +1,25 @@
+{
+  "name": "TBCore",
+  "version": "0.1.0",
+  "summary": "A short description of TBCore.",
+  "description": "",
+  "homepage": "https://github.com/<GITHUB_USERNAME>/TBCore",
+  "license": "MIT",
+  "authors": {
+    "BunLV": "levietbun@gmail.com"
+  },
+  "source": {
+    "git": "https://github.com/<GITHUB_USERNAME>/TBCore.git",
+    "tag": "0.1.0"
+  },
+  "platforms": {
+    "ios": "7.0"
+  },
+  "requires_arc": true,
+  "source_files": "Pod/Classes/**/*",
+  "resource_bundles": {
+    "TBCore": [
+      "Pod/Assets/*.png"
+    ]
+  }
+}

@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = "TBCore"
-  s.version          = "0.1.0"
+  s.version          = "1.0.0"
   s.summary          = "A short description of TBCore."
 
 # This description is used to generate tags and improve search results.
@@ -19,22 +19,39 @@ Pod::Spec.new do |s|
   s.description      = <<-DESC
                        DESC
 
-  s.homepage         = "https://github.com/<GITHUB_USERNAME>/TBCore"
+  s.homepage         = "https://github.com/BunLV/TBCore"
   # s.screenshots     = "www.example.com/screenshots_1", "www.example.com/screenshots_2"
   s.license          = 'MIT'
   s.author           = { "BunLV" => "levietbun@gmail.com" }
-  s.source           = { :git => "https://github.com/<GITHUB_USERNAME>/TBCore.git", :tag => s.version.to_s }
+  s.source           = { :git => "https://github.com/BunLV/TBCore.git", :tag => s.version.to_s }
   # s.social_media_url = 'https://twitter.com/<TWITTER_USERNAME>'
 
   s.platform     = :ios, '7.0'
   s.requires_arc = true
 
-  s.source_files = 'Pod/Classes/**/*'
+# - - - - - - - - - - - - - - - - - - - - - - - Source files
+  s.source_files = 'TBCore/*.h'
+
+  s.subspec 'TBCore/01-Define' do |ss|
+    ss.source_files = 'TBCore/01-Define/*.h'
+  end
+
+
+# - - - - - - - - - - - - - - - - - - - - - - - Bundle files
   s.resource_bundles = {
-    'TBCore' => ['Pod/Assets/*.png']
+    'TBCore' => ['TBCore/99-Resouces/*.{png,xib,storyboad}']
   }
 
-  # s.public_header_files = 'Pod/Classes/**/*.h'
-  # s.frameworks = 'UIKit', 'MapKit'
+
+# - - - - - - - - - - - - - - - - - - - - - - - Public headers
+  s.public_header_files = 'TBCore/*.h', 'TBCore/01-Define/*.h'
+
+
+# - - - - - - - - - - - - - - - - - - - - - - - Frameworks
+  s.frameworks = 'UIKit'
+
+
+# - - - - - - - - - - - - - - - - - - - - - - - Dependencies
   # s.dependency 'AFNetworking', '~> 2.3'
+
 end
