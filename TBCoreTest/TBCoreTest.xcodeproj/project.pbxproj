@@ -47,9 +47,18 @@
 		63028E381CB55CA100682FBD /* UIImageView+TBCore.m in Sources */ = {isa = PBXBuildFile; fileRef = 63028E371CB55CA100682FBD /* UIImageView+TBCore.m */; };
 		63028E3B1CB55CAB00682FBD /* UIButton+TBCore.m in Sources */ = {isa = PBXBuildFile; fileRef = 63028E3A1CB55CAB00682FBD /* UIButton+TBCore.m */; };
 		63028E441CB564A900682FBD /* UIView+TBCore.m in Sources */ = {isa = PBXBuildFile; fileRef = 63028E431CB564A900682FBD /* UIView+TBCore.m */; };
+		6339CFD01CB664D60018F699 /* TBBaseTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6339CFCF1CB664D60018F699 /* TBBaseTableViewController.m */; };
+		6339CFD31CB665960018F699 /* TBBaseTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 6339CFD21CB665960018F699 /* TBBaseTableViewCell.m */; };
+		6339CFD61CB665CF0018F699 /* UITableViewCell+TBBaseTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 6339CFD51CB665CF0018F699 /* UITableViewCell+TBBaseTableViewCell.m */; };
+		6339CFD91CB666E30018F699 /* TBBaseList.m in Sources */ = {isa = PBXBuildFile; fileRef = 6339CFD81CB666E30018F699 /* TBBaseList.m */; };
+		633A758D1CB6443200576F91 /* TBAFHTTPSessionManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 633A75881CB6443200576F91 /* TBAFHTTPSessionManager.m */; };
+		633A758E1CB6443200576F91 /* TBService+Demo.m in Sources */ = {isa = PBXBuildFile; fileRef = 633A758A1CB6443200576F91 /* TBService+Demo.m */; };
+		633A758F1CB6443200576F91 /* TBService.m in Sources */ = {isa = PBXBuildFile; fileRef = 633A758C1CB6443200576F91 /* TBService.m */; };
+		B5DB67A54A3E68E5C57DFE76 /* libPods-TBCoreTest.a in Frameworks */ = {isa = PBXBuildFile; fileRef = AF9EC47C63A6DC437E655081 /* libPods-TBCoreTest.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		4E401F4B570C924A7BAC9832 /* Pods-TBCoreTest.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TBCoreTest.debug.xcconfig"; path = "Pods/Target Support Files/Pods-TBCoreTest/Pods-TBCoreTest.debug.xcconfig"; sourceTree = "<group>"; };
 		63028CFC1CB518BD00682FBD /* TBCoreTest.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TBCoreTest.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		63028D001CB518BD00682FBD /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		63028D021CB518BD00682FBD /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -147,6 +156,22 @@
 		63028E411CB55D2D00682FBD /* TB-Header-UIImageView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "TB-Header-UIImageView.h"; sourceTree = "<group>"; };
 		63028E421CB564A900682FBD /* UIView+TBCore.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+TBCore.h"; sourceTree = "<group>"; };
 		63028E431CB564A900682FBD /* UIView+TBCore.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+TBCore.m"; sourceTree = "<group>"; };
+		6339CFCE1CB664D60018F699 /* TBBaseTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TBBaseTableViewController.h; sourceTree = "<group>"; };
+		6339CFCF1CB664D60018F699 /* TBBaseTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TBBaseTableViewController.m; sourceTree = "<group>"; };
+		6339CFD11CB665960018F699 /* TBBaseTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TBBaseTableViewCell.h; sourceTree = "<group>"; };
+		6339CFD21CB665960018F699 /* TBBaseTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TBBaseTableViewCell.m; sourceTree = "<group>"; };
+		6339CFD41CB665CF0018F699 /* UITableViewCell+TBBaseTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UITableViewCell+TBBaseTableViewCell.h"; sourceTree = "<group>"; };
+		6339CFD51CB665CF0018F699 /* UITableViewCell+TBBaseTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UITableViewCell+TBBaseTableViewCell.m"; sourceTree = "<group>"; };
+		6339CFD71CB666E30018F699 /* TBBaseList.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TBBaseList.h; sourceTree = "<group>"; };
+		6339CFD81CB666E30018F699 /* TBBaseList.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TBBaseList.m; sourceTree = "<group>"; };
+		633A75871CB6443200576F91 /* TBAFHTTPSessionManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TBAFHTTPSessionManager.h; sourceTree = "<group>"; };
+		633A75881CB6443200576F91 /* TBAFHTTPSessionManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TBAFHTTPSessionManager.m; sourceTree = "<group>"; };
+		633A75891CB6443200576F91 /* TBService+Demo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "TBService+Demo.h"; sourceTree = "<group>"; };
+		633A758A1CB6443200576F91 /* TBService+Demo.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "TBService+Demo.m"; sourceTree = "<group>"; };
+		633A758B1CB6443200576F91 /* TBService.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TBService.h; sourceTree = "<group>"; };
+		633A758C1CB6443200576F91 /* TBService.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TBService.m; sourceTree = "<group>"; };
+		8DD7120C14152A56A068CB8D /* Pods-TBCoreTest.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TBCoreTest.release.xcconfig"; path = "Pods/Target Support Files/Pods-TBCoreTest/Pods-TBCoreTest.release.xcconfig"; sourceTree = "<group>"; };
+		AF9EC47C63A6DC437E655081 /* libPods-TBCoreTest.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-TBCoreTest.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -154,6 +179,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B5DB67A54A3E68E5C57DFE76 /* libPods-TBCoreTest.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -165,6 +191,8 @@
 			children = (
 				63028CFE1CB518BD00682FBD /* TBCoreTest */,
 				63028CFD1CB518BD00682FBD /* Products */,
+				70D86868BA8F934874700BA1 /* Pods */,
+				D2F0972E390D3A0F915C6741 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -206,6 +234,7 @@
 			children = (
 				63028D171CB518D400682FBD /* 01-Define */,
 				63028D871CB520FA00682FBD /* 02-Category */,
+				633A75861CB6443200576F91 /* 08-Service */,
 				63028D601CB518D400682FBD /* 09-Base */,
 				63028D6A1CB518D400682FBD /* 99-Resouces */,
 				63028DF21CB5266200682FBD /* TB-Header.h */,
@@ -235,6 +264,8 @@
 		63028D611CB518D400682FBD /* 01-Object */ = {
 			isa = PBXGroup;
 			children = (
+				6339CFD71CB666E30018F699 /* TBBaseList.h */,
+				6339CFD81CB666E30018F699 /* TBBaseList.m */,
 				63028D621CB518D400682FBD /* TBBaseObject.h */,
 				63028D631CB518D400682FBD /* TBBaseObject.m */,
 			);
@@ -244,8 +275,12 @@
 		63028D641CB518D400682FBD /* 02-View */ = {
 			isa = PBXGroup;
 			children = (
+				6339CFD11CB665960018F699 /* TBBaseTableViewCell.h */,
+				6339CFD21CB665960018F699 /* TBBaseTableViewCell.m */,
 				63028D651CB518D400682FBD /* TBBaseView.h */,
 				63028D661CB518D400682FBD /* TBBaseView.m */,
+				6339CFD41CB665CF0018F699 /* UITableViewCell+TBBaseTableViewCell.h */,
+				6339CFD51CB665CF0018F699 /* UITableViewCell+TBBaseTableViewCell.m */,
 			);
 			path = "02-View";
 			sourceTree = "<group>";
@@ -253,6 +288,8 @@
 		63028D671CB518D400682FBD /* 03-ViewController */ = {
 			isa = PBXGroup;
 			children = (
+				6339CFCE1CB664D60018F699 /* TBBaseTableViewController.h */,
+				6339CFCF1CB664D60018F699 /* TBBaseTableViewController.m */,
 				63028D681CB518D400682FBD /* TBBaseViewController.h */,
 				63028D691CB518D400682FBD /* TBBaseViewController.m */,
 			);
@@ -495,6 +532,36 @@
 			path = "41-UINavigationController";
 			sourceTree = "<group>";
 		};
+		633A75861CB6443200576F91 /* 08-Service */ = {
+			isa = PBXGroup;
+			children = (
+				633A75871CB6443200576F91 /* TBAFHTTPSessionManager.h */,
+				633A75881CB6443200576F91 /* TBAFHTTPSessionManager.m */,
+				633A758B1CB6443200576F91 /* TBService.h */,
+				633A758C1CB6443200576F91 /* TBService.m */,
+				633A75891CB6443200576F91 /* TBService+Demo.h */,
+				633A758A1CB6443200576F91 /* TBService+Demo.m */,
+			);
+			path = "08-Service";
+			sourceTree = "<group>";
+		};
+		70D86868BA8F934874700BA1 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				4E401F4B570C924A7BAC9832 /* Pods-TBCoreTest.debug.xcconfig */,
+				8DD7120C14152A56A068CB8D /* Pods-TBCoreTest.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		D2F0972E390D3A0F915C6741 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				AF9EC47C63A6DC437E655081 /* libPods-TBCoreTest.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -502,9 +569,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 63028D131CB518BD00682FBD /* Build configuration list for PBXNativeTarget "TBCoreTest" */;
 			buildPhases = (
+				D9564C3F16A83B05CB502A56 /* Check Pods Manifest.lock */,
 				63028CF81CB518BD00682FBD /* Sources */,
 				63028CF91CB518BD00682FBD /* Frameworks */,
 				63028CFA1CB518BD00682FBD /* Resources */,
+				7ED783D8A5AECF49A841D6A8 /* Embed Pods Frameworks */,
+				D365E2CCF9A8C3AAFF7A98B5 /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -561,6 +631,54 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		7ED783D8A5AECF49A841D6A8 /* Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-TBCoreTest/Pods-TBCoreTest-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		D365E2CCF9A8C3AAFF7A98B5 /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-TBCoreTest/Pods-TBCoreTest-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		D9564C3F16A83B05CB502A56 /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		63028CF81CB518BD00682FBD /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
@@ -571,6 +689,7 @@
 				63028D861CB518D400682FBD /* TBBaseViewController.m in Sources */,
 				63028D851CB518D400682FBD /* TBBaseView.m in Sources */,
 				63028DE51CB520FA00682FBD /* NSUserDefaults+TBCore.m in Sources */,
+				633A758F1CB6443200576F91 /* TBService.m in Sources */,
 				63028E281CB55C5500682FBD /* UIView+TBFrame.m in Sources */,
 				63028DD91CB520FA00682FBD /* NSString+TBCheck.m in Sources */,
 				63028E321CB55C8200682FBD /* UIStoryboard+TBCore.m in Sources */,
@@ -585,6 +704,8 @@
 				63028DD81CB520FA00682FBD /* NSString+TBChange.m in Sources */,
 				63028E2A1CB55C5500682FBD /* UIView+TBLine.m in Sources */,
 				63028DDD1CB520FA00682FBD /* NSString+TBUrl.m in Sources */,
+				6339CFD91CB666E30018F699 /* TBBaseList.m in Sources */,
+				6339CFD61CB665CF0018F699 /* UITableViewCell+TBBaseTableViewCell.m in Sources */,
 				63028E251CB55C5500682FBD /* UIColor+TBHex.m in Sources */,
 				63028D011CB518BD00682FBD /* main.m in Sources */,
 				63028E2C1CB55C5500682FBD /* UILabel+TBResize.m in Sources */,
@@ -595,10 +716,14 @@
 				63028DE11CB520FA00682FBD /* NSArray+TBObject.m in Sources */,
 				63028DE01CB520FA00682FBD /* NSMutableDictionary+TBObject.m in Sources */,
 				63028E2E1CB55C5500682FBD /* UIViewController+TBCore.m in Sources */,
+				633A758D1CB6443200576F91 /* TBAFHTTPSessionManager.m in Sources */,
+				6339CFD01CB664D60018F699 /* TBBaseTableViewController.m in Sources */,
 				63028E241CB55C5500682FBD /* UIColor+TBCore.m in Sources */,
 				63028E2B1CB55C5500682FBD /* UIView+TBTag.m in Sources */,
+				6339CFD31CB665960018F699 /* TBBaseTableViewCell.m in Sources */,
 				63028E271CB55C5500682FBD /* UIView+TBBorder.m in Sources */,
 				63028E351CB55C8D00682FBD /* UINavigationBar+TBCore.m in Sources */,
+				633A758E1CB6443200576F91 /* TBService+Demo.m in Sources */,
 				63028D841CB518D400682FBD /* TBBaseObject.m in Sources */,
 				63028E381CB55CA100682FBD /* UIImageView+TBCore.m in Sources */,
 				63028E261CB55C5500682FBD /* UIFont+TBCore.m in Sources */,
@@ -714,10 +839,15 @@
 		};
 		63028D141CB518BD00682FBD /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4E401F4B570C924A7BAC9832 /* Pods-TBCoreTest.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = TBCoreTest/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/TBCoreTest",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = "BunLV-Solution.TBCoreTest";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
@@ -725,10 +855,15 @@
 		};
 		63028D151CB518BD00682FBD /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8DD7120C14152A56A068CB8D /* Pods-TBCoreTest.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = TBCoreTest/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/TBCoreTest",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = "BunLV-Solution.TBCoreTest";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
@@ -753,6 +888,7 @@
 				63028D151CB518BD00682FBD /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

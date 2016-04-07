@@ -162,4 +162,17 @@ static NSMutableDictionary *dictShared = nil;
     TBLog(@"%@ dealloc", NSStringFromClass([self class]));
 }
 
+#pragma mark - UITableViewCell
+- (NSString *)cellIdentifier
+{
+    NSLog(@"Plz overwriter");
+    
+    return @"";
+}
+
+- (CGFloat)cellHeight
+{
+    return 44.f;
+}
+
 @end

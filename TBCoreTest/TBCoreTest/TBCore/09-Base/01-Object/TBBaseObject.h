@@ -7,6 +7,7 @@
 //
 
 #import <Foundation/Foundation.h>
+#import <CoreGraphics/CoreGraphics.h>
 
 @interface TBBaseObject : NSObject <NSCopying>
 
@@ -35,5 +36,9 @@
 
 #pragma mark - Dealloc
 - (void)tb_dealloc;
+
+#pragma mark - UITableViewCell
+- (NSString *)cellIdentifier;
+- (CGFloat)cellHeight;
 
 @end

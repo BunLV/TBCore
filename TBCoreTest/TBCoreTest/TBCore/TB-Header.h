@@ -38,7 +38,13 @@
 
 // - - - - - - - - - Base - - - - - - - - -
 #   import "TBBaseObject.h"
+#   import "TBBaseList.h"
+
 #   import "TBBaseView.h"
+#   import "TBBaseTableViewCell.h"
+#   import "UITableViewCell+TBBaseTableViewCell.h"
+
 #   import "TBBaseViewController.h"
+#   import "TBBaseTableViewController.h"
 
 #endif /* TB_Header_h */
