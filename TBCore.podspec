@@ -41,6 +41,7 @@ Pod::Spec.new do |s|
 
 
 # - - - - - - - - - - - - - - - - - - - - - - - Dependencies - - - - - - - - - - - - - - - - - - - - - - -
-  s.dependency 'AFNetworking', 'SVPullToRefresh'
+  s.dependency 'AFNetworking'
+  s.dependency 'SVPullToRefresh'
 
 end

@@ -1,0 +1,6 @@
+framework module TBCore {
+  umbrella header "TBCore-umbrella.h"
+
+  export *
+  module * { export * }
+}
