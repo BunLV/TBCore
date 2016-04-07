@@ -1,0 +1,760 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		63028D011CB518BD00682FBD /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 63028D001CB518BD00682FBD /* main.m */; };
+		63028D041CB518BD00682FBD /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 63028D031CB518BD00682FBD /* AppDelegate.m */; };
+		63028D071CB518BD00682FBD /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 63028D061CB518BD00682FBD /* ViewController.m */; };
+		63028D0A1CB518BD00682FBD /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 63028D081CB518BD00682FBD /* Main.storyboard */; };
+		63028D0C1CB518BD00682FBD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 63028D0B1CB518BD00682FBD /* Assets.xcassets */; };
+		63028D0F1CB518BD00682FBD /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 63028D0D1CB518BD00682FBD /* LaunchScreen.storyboard */; };
+		63028D841CB518D400682FBD /* TBBaseObject.m in Sources */ = {isa = PBXBuildFile; fileRef = 63028D631CB518D400682FBD /* TBBaseObject.m */; };
+		63028D851CB518D400682FBD /* TBBaseView.m in Sources */ = {isa = PBXBuildFile; fileRef = 63028D661CB518D400682FBD /* TBBaseView.m */; };
+		63028D861CB518D400682FBD /* TBBaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 63028D691CB518D400682FBD /* TBBaseViewController.m */; };
+		63028DD81CB520FA00682FBD /* NSString+TBChange.m in Sources */ = {isa = PBXBuildFile; fileRef = 63028DAA1CB520FA00682FBD /* NSString+TBChange.m */; };
+		63028DD91CB520FA00682FBD /* NSString+TBCheck.m in Sources */ = {isa = PBXBuildFile; fileRef = 63028DAC1CB520FA00682FBD /* NSString+TBCheck.m */; };
+		63028DDA1CB520FA00682FBD /* NSString+TBConvert.m in Sources */ = {isa = PBXBuildFile; fileRef = 63028DAE1CB520FA00682FBD /* NSString+TBConvert.m */; };
+		63028DDB1CB520FA00682FBD /* NSString+TBDevice.m in Sources */ = {isa = PBXBuildFile; fileRef = 63028DB01CB520FA00682FBD /* NSString+TBDevice.m */; };
+		63028DDC1CB520FA00682FBD /* NSString+TBPath.m in Sources */ = {isa = PBXBuildFile; fileRef = 63028DB21CB520FA00682FBD /* NSString+TBPath.m */; };
+		63028DDD1CB520FA00682FBD /* NSString+TBUrl.m in Sources */ = {isa = PBXBuildFile; fileRef = 63028DB41CB520FA00682FBD /* NSString+TBUrl.m */; };
+		63028DDE1CB520FA00682FBD /* NSString+TBValid.m in Sources */ = {isa = PBXBuildFile; fileRef = 63028DB61CB520FA00682FBD /* NSString+TBValid.m */; };
+		63028DDF1CB520FA00682FBD /* NSDictionary+TBObject.m in Sources */ = {isa = PBXBuildFile; fileRef = 63028DBA1CB520FA00682FBD /* NSDictionary+TBObject.m */; };
+		63028DE01CB520FA00682FBD /* NSMutableDictionary+TBObject.m in Sources */ = {isa = PBXBuildFile; fileRef = 63028DBC1CB520FA00682FBD /* NSMutableDictionary+TBObject.m */; };
+		63028DE11CB520FA00682FBD /* NSArray+TBObject.m in Sources */ = {isa = PBXBuildFile; fileRef = 63028DC01CB520FA00682FBD /* NSArray+TBObject.m */; };
+		63028DE21CB520FA00682FBD /* NSMutableArray+TBObject.m in Sources */ = {isa = PBXBuildFile; fileRef = 63028DC21CB520FA00682FBD /* NSMutableArray+TBObject.m */; };
+		63028DE31CB520FA00682FBD /* NSDate+TBCheck.m in Sources */ = {isa = PBXBuildFile; fileRef = 63028DC61CB520FA00682FBD /* NSDate+TBCheck.m */; };
+		63028DE41CB520FA00682FBD /* NSDate+TBCore.m in Sources */ = {isa = PBXBuildFile; fileRef = 63028DC81CB520FA00682FBD /* NSDate+TBCore.m */; };
+		63028DE51CB520FA00682FBD /* NSUserDefaults+TBCore.m in Sources */ = {isa = PBXBuildFile; fileRef = 63028DCC1CB520FA00682FBD /* NSUserDefaults+TBCore.m */; };
+		63028E241CB55C5500682FBD /* UIColor+TBCore.m in Sources */ = {isa = PBXBuildFile; fileRef = 63028DFF1CB55C5500682FBD /* UIColor+TBCore.m */; };
+		63028E251CB55C5500682FBD /* UIColor+TBHex.m in Sources */ = {isa = PBXBuildFile; fileRef = 63028E011CB55C5500682FBD /* UIColor+TBHex.m */; };
+		63028E261CB55C5500682FBD /* UIFont+TBCore.m in Sources */ = {isa = PBXBuildFile; fileRef = 63028E051CB55C5500682FBD /* UIFont+TBCore.m */; };
+		63028E271CB55C5500682FBD /* UIView+TBBorder.m in Sources */ = {isa = PBXBuildFile; fileRef = 63028E091CB55C5500682FBD /* UIView+TBBorder.m */; };
+		63028E281CB55C5500682FBD /* UIView+TBFrame.m in Sources */ = {isa = PBXBuildFile; fileRef = 63028E0B1CB55C5500682FBD /* UIView+TBFrame.m */; };
+		63028E291CB55C5500682FBD /* UIView+TBHandle.m in Sources */ = {isa = PBXBuildFile; fileRef = 63028E0D1CB55C5500682FBD /* UIView+TBHandle.m */; };
+		63028E2A1CB55C5500682FBD /* UIView+TBLine.m in Sources */ = {isa = PBXBuildFile; fileRef = 63028E0F1CB55C5500682FBD /* UIView+TBLine.m */; };
+		63028E2B1CB55C5500682FBD /* UIView+TBTag.m in Sources */ = {isa = PBXBuildFile; fileRef = 63028E111CB55C5500682FBD /* UIView+TBTag.m */; };
+		63028E2C1CB55C5500682FBD /* UILabel+TBResize.m in Sources */ = {isa = PBXBuildFile; fileRef = 63028E161CB55C5500682FBD /* UILabel+TBResize.m */; };
+		63028E2D1CB55C5500682FBD /* UIAlertView+TBBlock.m in Sources */ = {isa = PBXBuildFile; fileRef = 63028E1B1CB55C5500682FBD /* UIAlertView+TBBlock.m */; };
+		63028E2E1CB55C5500682FBD /* UIViewController+TBCore.m in Sources */ = {isa = PBXBuildFile; fileRef = 63028E201CB55C5500682FBD /* UIViewController+TBCore.m */; };
+		63028E2F1CB55C5500682FBD /* UINavigationController+TBCore.m in Sources */ = {isa = PBXBuildFile; fileRef = 63028E231CB55C5500682FBD /* UINavigationController+TBCore.m */; };
+		63028E321CB55C8200682FBD /* UIStoryboard+TBCore.m in Sources */ = {isa = PBXBuildFile; fileRef = 63028E311CB55C8200682FBD /* UIStoryboard+TBCore.m */; };
+		63028E351CB55C8D00682FBD /* UINavigationBar+TBCore.m in Sources */ = {isa = PBXBuildFile; fileRef = 63028E341CB55C8D00682FBD /* UINavigationBar+TBCore.m */; };
+		63028E381CB55CA100682FBD /* UIImageView+TBCore.m in Sources */ = {isa = PBXBuildFile; fileRef = 63028E371CB55CA100682FBD /* UIImageView+TBCore.m */; };
+		63028E3B1CB55CAB00682FBD /* UIButton+TBCore.m in Sources */ = {isa = PBXBuildFile; fileRef = 63028E3A1CB55CAB00682FBD /* UIButton+TBCore.m */; };
+		63028E441CB564A900682FBD /* UIView+TBCore.m in Sources */ = {isa = PBXBuildFile; fileRef = 63028E431CB564A900682FBD /* UIView+TBCore.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		63028CFC1CB518BD00682FBD /* TBCoreTest.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TBCoreTest.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		63028D001CB518BD00682FBD /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		63028D021CB518BD00682FBD /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		63028D031CB518BD00682FBD /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		63028D051CB518BD00682FBD /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		63028D061CB518BD00682FBD /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		63028D091CB518BD00682FBD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		63028D0B1CB518BD00682FBD /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		63028D0E1CB518BD00682FBD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		63028D101CB518BD00682FBD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		63028D181CB518D400682FBD /* TBDefineCore.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TBDefineCore.h; sourceTree = "<group>"; };
+		63028D621CB518D400682FBD /* TBBaseObject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TBBaseObject.h; sourceTree = "<group>"; };
+		63028D631CB518D400682FBD /* TBBaseObject.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TBBaseObject.m; sourceTree = "<group>"; };
+		63028D651CB518D400682FBD /* TBBaseView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TBBaseView.h; sourceTree = "<group>"; };
+		63028D661CB518D400682FBD /* TBBaseView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TBBaseView.m; sourceTree = "<group>"; };
+		63028D681CB518D400682FBD /* TBBaseViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TBBaseViewController.h; sourceTree = "<group>"; };
+		63028D691CB518D400682FBD /* TBBaseViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TBBaseViewController.m; sourceTree = "<group>"; };
+		63028DA91CB520FA00682FBD /* NSString+TBChange.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+TBChange.h"; sourceTree = "<group>"; };
+		63028DAA1CB520FA00682FBD /* NSString+TBChange.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+TBChange.m"; sourceTree = "<group>"; };
+		63028DAB1CB520FA00682FBD /* NSString+TBCheck.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+TBCheck.h"; sourceTree = "<group>"; };
+		63028DAC1CB520FA00682FBD /* NSString+TBCheck.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+TBCheck.m"; sourceTree = "<group>"; };
+		63028DAD1CB520FA00682FBD /* NSString+TBConvert.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+TBConvert.h"; sourceTree = "<group>"; };
+		63028DAE1CB520FA00682FBD /* NSString+TBConvert.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+TBConvert.m"; sourceTree = "<group>"; };
+		63028DAF1CB520FA00682FBD /* NSString+TBDevice.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+TBDevice.h"; sourceTree = "<group>"; };
+		63028DB01CB520FA00682FBD /* NSString+TBDevice.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+TBDevice.m"; sourceTree = "<group>"; };
+		63028DB11CB520FA00682FBD /* NSString+TBPath.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+TBPath.h"; sourceTree = "<group>"; };
+		63028DB21CB520FA00682FBD /* NSString+TBPath.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+TBPath.m"; sourceTree = "<group>"; };
+		63028DB31CB520FA00682FBD /* NSString+TBUrl.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+TBUrl.h"; sourceTree = "<group>"; };
+		63028DB41CB520FA00682FBD /* NSString+TBUrl.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+TBUrl.m"; sourceTree = "<group>"; };
+		63028DB51CB520FA00682FBD /* NSString+TBValid.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+TBValid.h"; sourceTree = "<group>"; };
+		63028DB61CB520FA00682FBD /* NSString+TBValid.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+TBValid.m"; sourceTree = "<group>"; };
+		63028DB91CB520FA00682FBD /* NSDictionary+TBObject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSDictionary+TBObject.h"; sourceTree = "<group>"; };
+		63028DBA1CB520FA00682FBD /* NSDictionary+TBObject.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSDictionary+TBObject.m"; sourceTree = "<group>"; };
+		63028DBB1CB520FA00682FBD /* NSMutableDictionary+TBObject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSMutableDictionary+TBObject.h"; sourceTree = "<group>"; };
+		63028DBC1CB520FA00682FBD /* NSMutableDictionary+TBObject.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSMutableDictionary+TBObject.m"; sourceTree = "<group>"; };
+		63028DBF1CB520FA00682FBD /* NSArray+TBObject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSArray+TBObject.h"; sourceTree = "<group>"; };
+		63028DC01CB520FA00682FBD /* NSArray+TBObject.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSArray+TBObject.m"; sourceTree = "<group>"; };
+		63028DC11CB520FA00682FBD /* NSMutableArray+TBObject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSMutableArray+TBObject.h"; sourceTree = "<group>"; };
+		63028DC21CB520FA00682FBD /* NSMutableArray+TBObject.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSMutableArray+TBObject.m"; sourceTree = "<group>"; };
+		63028DC51CB520FA00682FBD /* NSDate+TBCheck.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSDate+TBCheck.h"; sourceTree = "<group>"; };
+		63028DC61CB520FA00682FBD /* NSDate+TBCheck.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSDate+TBCheck.m"; sourceTree = "<group>"; };
+		63028DC71CB520FA00682FBD /* NSDate+TBCore.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSDate+TBCore.h"; sourceTree = "<group>"; };
+		63028DC81CB520FA00682FBD /* NSDate+TBCore.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSDate+TBCore.m"; sourceTree = "<group>"; };
+		63028DCB1CB520FA00682FBD /* NSUserDefaults+TBCore.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSUserDefaults+TBCore.h"; sourceTree = "<group>"; };
+		63028DCC1CB520FA00682FBD /* NSUserDefaults+TBCore.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSUserDefaults+TBCore.m"; sourceTree = "<group>"; };
+		63028DE61CB5214300682FBD /* TB-Header-Define.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "TB-Header-Define.h"; sourceTree = "<group>"; };
+		63028DED1CB5247900682FBD /* TB-Header-NSString.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "TB-Header-NSString.h"; sourceTree = "<group>"; };
+		63028DEE1CB5248E00682FBD /* TB-Header-NSDictionary.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "TB-Header-NSDictionary.h"; sourceTree = "<group>"; };
+		63028DEF1CB524A500682FBD /* TB-Header-NSArray.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "TB-Header-NSArray.h"; sourceTree = "<group>"; };
+		63028DF01CB524B400682FBD /* TB-Header-NSDate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "TB-Header-NSDate.h"; sourceTree = "<group>"; };
+		63028DF11CB524C400682FBD /* TB-Header-NSUserDefaults.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "TB-Header-NSUserDefaults.h"; sourceTree = "<group>"; };
+		63028DF21CB5266200682FBD /* TB-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "TB-Header.h"; sourceTree = "<group>"; };
+		63028DFD1CB55C5500682FBD /* TB-Header-UIColor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "TB-Header-UIColor.h"; sourceTree = "<group>"; };
+		63028DFE1CB55C5500682FBD /* UIColor+TBCore.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIColor+TBCore.h"; sourceTree = "<group>"; };
+		63028DFF1CB55C5500682FBD /* UIColor+TBCore.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIColor+TBCore.m"; sourceTree = "<group>"; };
+		63028E001CB55C5500682FBD /* UIColor+TBHex.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIColor+TBHex.h"; sourceTree = "<group>"; };
+		63028E011CB55C5500682FBD /* UIColor+TBHex.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIColor+TBHex.m"; sourceTree = "<group>"; };
+		63028E031CB55C5500682FBD /* TB-Header-UIFont.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "TB-Header-UIFont.h"; sourceTree = "<group>"; };
+		63028E041CB55C5500682FBD /* UIFont+TBCore.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIFont+TBCore.h"; sourceTree = "<group>"; };
+		63028E051CB55C5500682FBD /* UIFont+TBCore.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIFont+TBCore.m"; sourceTree = "<group>"; };
+		63028E071CB55C5500682FBD /* TB-Header-UIView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "TB-Header-UIView.h"; sourceTree = "<group>"; };
+		63028E081CB55C5500682FBD /* UIView+TBBorder.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+TBBorder.h"; sourceTree = "<group>"; };
+		63028E091CB55C5500682FBD /* UIView+TBBorder.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+TBBorder.m"; sourceTree = "<group>"; };
+		63028E0A1CB55C5500682FBD /* UIView+TBFrame.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+TBFrame.h"; sourceTree = "<group>"; };
+		63028E0B1CB55C5500682FBD /* UIView+TBFrame.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+TBFrame.m"; sourceTree = "<group>"; };
+		63028E0C1CB55C5500682FBD /* UIView+TBHandle.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+TBHandle.h"; sourceTree = "<group>"; };
+		63028E0D1CB55C5500682FBD /* UIView+TBHandle.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+TBHandle.m"; sourceTree = "<group>"; };
+		63028E0E1CB55C5500682FBD /* UIView+TBLine.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+TBLine.h"; sourceTree = "<group>"; };
+		63028E0F1CB55C5500682FBD /* UIView+TBLine.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+TBLine.m"; sourceTree = "<group>"; };
+		63028E101CB55C5500682FBD /* UIView+TBTag.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+TBTag.h"; sourceTree = "<group>"; };
+		63028E111CB55C5500682FBD /* UIView+TBTag.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+TBTag.m"; sourceTree = "<group>"; };
+		63028E141CB55C5500682FBD /* TB-Header-UILabel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "TB-Header-UILabel.h"; sourceTree = "<group>"; };
+		63028E151CB55C5500682FBD /* UILabel+TBResize.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UILabel+TBResize.h"; sourceTree = "<group>"; };
+		63028E161CB55C5500682FBD /* UILabel+TBResize.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UILabel+TBResize.m"; sourceTree = "<group>"; };
+		63028E191CB55C5500682FBD /* TB-Header-UIAlertView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "TB-Header-UIAlertView.h"; sourceTree = "<group>"; };
+		63028E1A1CB55C5500682FBD /* UIAlertView+TBBlock.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIAlertView+TBBlock.h"; sourceTree = "<group>"; };
+		63028E1B1CB55C5500682FBD /* UIAlertView+TBBlock.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIAlertView+TBBlock.m"; sourceTree = "<group>"; };
+		63028E1F1CB55C5500682FBD /* UIViewController+TBCore.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIViewController+TBCore.h"; sourceTree = "<group>"; };
+		63028E201CB55C5500682FBD /* UIViewController+TBCore.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+TBCore.m"; sourceTree = "<group>"; };
+		63028E221CB55C5500682FBD /* UINavigationController+TBCore.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UINavigationController+TBCore.h"; sourceTree = "<group>"; };
+		63028E231CB55C5500682FBD /* UINavigationController+TBCore.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UINavigationController+TBCore.m"; sourceTree = "<group>"; };
+		63028E301CB55C8200682FBD /* UIStoryboard+TBCore.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIStoryboard+TBCore.h"; sourceTree = "<group>"; };
+		63028E311CB55C8200682FBD /* UIStoryboard+TBCore.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIStoryboard+TBCore.m"; sourceTree = "<group>"; };
+		63028E331CB55C8D00682FBD /* UINavigationBar+TBCore.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UINavigationBar+TBCore.h"; sourceTree = "<group>"; };
+		63028E341CB55C8D00682FBD /* UINavigationBar+TBCore.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UINavigationBar+TBCore.m"; sourceTree = "<group>"; };
+		63028E361CB55CA100682FBD /* UIImageView+TBCore.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImageView+TBCore.h"; sourceTree = "<group>"; };
+		63028E371CB55CA100682FBD /* UIImageView+TBCore.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImageView+TBCore.m"; sourceTree = "<group>"; };
+		63028E391CB55CAB00682FBD /* UIButton+TBCore.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIButton+TBCore.h"; sourceTree = "<group>"; };
+		63028E3A1CB55CAB00682FBD /* UIButton+TBCore.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIButton+TBCore.m"; sourceTree = "<group>"; };
+		63028E3C1CB55CC200682FBD /* TB-Header-UIButton.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "TB-Header-UIButton.h"; sourceTree = "<group>"; };
+		63028E3D1CB55CD000682FBD /* TB-Header-UIStoryboard.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "TB-Header-UIStoryboard.h"; sourceTree = "<group>"; };
+		63028E3E1CB55CE700682FBD /* TB-Header-UINavigationBar.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "TB-Header-UINavigationBar.h"; sourceTree = "<group>"; };
+		63028E3F1CB55CF500682FBD /* TB-Header-UIViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "TB-Header-UIViewController.h"; sourceTree = "<group>"; };
+		63028E401CB55D0700682FBD /* TB-Header-UINavigationController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "TB-Header-UINavigationController.h"; sourceTree = "<group>"; };
+		63028E411CB55D2D00682FBD /* TB-Header-UIImageView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "TB-Header-UIImageView.h"; sourceTree = "<group>"; };
+		63028E421CB564A900682FBD /* UIView+TBCore.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+TBCore.h"; sourceTree = "<group>"; };
+		63028E431CB564A900682FBD /* UIView+TBCore.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+TBCore.m"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		63028CF91CB518BD00682FBD /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		63028CF31CB518BD00682FBD = {
+			isa = PBXGroup;
+			children = (
+				63028CFE1CB518BD00682FBD /* TBCoreTest */,
+				63028CFD1CB518BD00682FBD /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		63028CFD1CB518BD00682FBD /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				63028CFC1CB518BD00682FBD /* TBCoreTest.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		63028CFE1CB518BD00682FBD /* TBCoreTest */ = {
+			isa = PBXGroup;
+			children = (
+				63028D161CB518D400682FBD /* TBCore */,
+				63028D021CB518BD00682FBD /* AppDelegate.h */,
+				63028D031CB518BD00682FBD /* AppDelegate.m */,
+				63028D051CB518BD00682FBD /* ViewController.h */,
+				63028D061CB518BD00682FBD /* ViewController.m */,
+				63028D081CB518BD00682FBD /* Main.storyboard */,
+				63028D0B1CB518BD00682FBD /* Assets.xcassets */,
+				63028D0D1CB518BD00682FBD /* LaunchScreen.storyboard */,
+				63028D101CB518BD00682FBD /* Info.plist */,
+				63028CFF1CB518BD00682FBD /* Supporting Files */,
+			);
+			path = TBCoreTest;
+			sourceTree = "<group>";
+		};
+		63028CFF1CB518BD00682FBD /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				63028D001CB518BD00682FBD /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		63028D161CB518D400682FBD /* TBCore */ = {
+			isa = PBXGroup;
+			children = (
+				63028D171CB518D400682FBD /* 01-Define */,
+				63028D871CB520FA00682FBD /* 02-Category */,
+				63028D601CB518D400682FBD /* 09-Base */,
+				63028D6A1CB518D400682FBD /* 99-Resouces */,
+				63028DF21CB5266200682FBD /* TB-Header.h */,
+			);
+			path = TBCore;
+			sourceTree = "<group>";
+		};
+		63028D171CB518D400682FBD /* 01-Define */ = {
+			isa = PBXGroup;
+			children = (
+				63028DE61CB5214300682FBD /* TB-Header-Define.h */,
+				63028D181CB518D400682FBD /* TBDefineCore.h */,
+			);
+			path = "01-Define";
+			sourceTree = "<group>";
+		};
+		63028D601CB518D400682FBD /* 09-Base */ = {
+			isa = PBXGroup;
+			children = (
+				63028D611CB518D400682FBD /* 01-Object */,
+				63028D641CB518D400682FBD /* 02-View */,
+				63028D671CB518D400682FBD /* 03-ViewController */,
+			);
+			path = "09-Base";
+			sourceTree = "<group>";
+		};
+		63028D611CB518D400682FBD /* 01-Object */ = {
+			isa = PBXGroup;
+			children = (
+				63028D621CB518D400682FBD /* TBBaseObject.h */,
+				63028D631CB518D400682FBD /* TBBaseObject.m */,
+			);
+			path = "01-Object";
+			sourceTree = "<group>";
+		};
+		63028D641CB518D400682FBD /* 02-View */ = {
+			isa = PBXGroup;
+			children = (
+				63028D651CB518D400682FBD /* TBBaseView.h */,
+				63028D661CB518D400682FBD /* TBBaseView.m */,
+			);
+			path = "02-View";
+			sourceTree = "<group>";
+		};
+		63028D671CB518D400682FBD /* 03-ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				63028D681CB518D400682FBD /* TBBaseViewController.h */,
+				63028D691CB518D400682FBD /* TBBaseViewController.m */,
+			);
+			path = "03-ViewController";
+			sourceTree = "<group>";
+		};
+		63028D6A1CB518D400682FBD /* 99-Resouces */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = "99-Resouces";
+			sourceTree = "<group>";
+		};
+		63028D871CB520FA00682FBD /* 02-Category */ = {
+			isa = PBXGroup;
+			children = (
+				63028DFB1CB55C5500682FBD /* 01-UI */,
+				63028DA71CB520FA00682FBD /* 02-NS */,
+			);
+			path = "02-Category";
+			sourceTree = "<group>";
+		};
+		63028DA71CB520FA00682FBD /* 02-NS */ = {
+			isa = PBXGroup;
+			children = (
+				63028DA81CB520FA00682FBD /* 01-NSString */,
+				63028DB81CB520FA00682FBD /* 02-NSDictionary */,
+				63028DBE1CB520FA00682FBD /* 03-NSArray */,
+				63028DC41CB520FA00682FBD /* 04-NSDate */,
+				63028DCA1CB520FA00682FBD /* 05-NSUserDefault */,
+			);
+			path = "02-NS";
+			sourceTree = "<group>";
+		};
+		63028DA81CB520FA00682FBD /* 01-NSString */ = {
+			isa = PBXGroup;
+			children = (
+				63028DA91CB520FA00682FBD /* NSString+TBChange.h */,
+				63028DAA1CB520FA00682FBD /* NSString+TBChange.m */,
+				63028DAB1CB520FA00682FBD /* NSString+TBCheck.h */,
+				63028DAC1CB520FA00682FBD /* NSString+TBCheck.m */,
+				63028DAD1CB520FA00682FBD /* NSString+TBConvert.h */,
+				63028DAE1CB520FA00682FBD /* NSString+TBConvert.m */,
+				63028DAF1CB520FA00682FBD /* NSString+TBDevice.h */,
+				63028DB01CB520FA00682FBD /* NSString+TBDevice.m */,
+				63028DB11CB520FA00682FBD /* NSString+TBPath.h */,
+				63028DB21CB520FA00682FBD /* NSString+TBPath.m */,
+				63028DB31CB520FA00682FBD /* NSString+TBUrl.h */,
+				63028DB41CB520FA00682FBD /* NSString+TBUrl.m */,
+				63028DB51CB520FA00682FBD /* NSString+TBValid.h */,
+				63028DB61CB520FA00682FBD /* NSString+TBValid.m */,
+				63028DED1CB5247900682FBD /* TB-Header-NSString.h */,
+			);
+			path = "01-NSString";
+			sourceTree = "<group>";
+		};
+		63028DB81CB520FA00682FBD /* 02-NSDictionary */ = {
+			isa = PBXGroup;
+			children = (
+				63028DB91CB520FA00682FBD /* NSDictionary+TBObject.h */,
+				63028DBA1CB520FA00682FBD /* NSDictionary+TBObject.m */,
+				63028DBB1CB520FA00682FBD /* NSMutableDictionary+TBObject.h */,
+				63028DBC1CB520FA00682FBD /* NSMutableDictionary+TBObject.m */,
+				63028DEE1CB5248E00682FBD /* TB-Header-NSDictionary.h */,
+			);
+			path = "02-NSDictionary";
+			sourceTree = "<group>";
+		};
+		63028DBE1CB520FA00682FBD /* 03-NSArray */ = {
+			isa = PBXGroup;
+			children = (
+				63028DBF1CB520FA00682FBD /* NSArray+TBObject.h */,
+				63028DC01CB520FA00682FBD /* NSArray+TBObject.m */,
+				63028DC11CB520FA00682FBD /* NSMutableArray+TBObject.h */,
+				63028DC21CB520FA00682FBD /* NSMutableArray+TBObject.m */,
+				63028DEF1CB524A500682FBD /* TB-Header-NSArray.h */,
+			);
+			path = "03-NSArray";
+			sourceTree = "<group>";
+		};
+		63028DC41CB520FA00682FBD /* 04-NSDate */ = {
+			isa = PBXGroup;
+			children = (
+				63028DC51CB520FA00682FBD /* NSDate+TBCheck.h */,
+				63028DC61CB520FA00682FBD /* NSDate+TBCheck.m */,
+				63028DC71CB520FA00682FBD /* NSDate+TBCore.h */,
+				63028DC81CB520FA00682FBD /* NSDate+TBCore.m */,
+				63028DF01CB524B400682FBD /* TB-Header-NSDate.h */,
+			);
+			path = "04-NSDate";
+			sourceTree = "<group>";
+		};
+		63028DCA1CB520FA00682FBD /* 05-NSUserDefault */ = {
+			isa = PBXGroup;
+			children = (
+				63028DCB1CB520FA00682FBD /* NSUserDefaults+TBCore.h */,
+				63028DCC1CB520FA00682FBD /* NSUserDefaults+TBCore.m */,
+				63028DF11CB524C400682FBD /* TB-Header-NSUserDefaults.h */,
+			);
+			path = "05-NSUserDefault";
+			sourceTree = "<group>";
+		};
+		63028DFB1CB55C5500682FBD /* 01-UI */ = {
+			isa = PBXGroup;
+			children = (
+				63028DFC1CB55C5500682FBD /* 01-UIColor */,
+				63028E021CB55C5500682FBD /* 02-UIFont */,
+				63028E061CB55C5500682FBD /* 20-UIView */,
+				63028E121CB55C5500682FBD /* 21-UIImageView */,
+				63028E131CB55C5500682FBD /* 22-UILabel */,
+				63028E171CB55C5500682FBD /* 23-UIButton */,
+				63028E181CB55C5500682FBD /* 29-UIAlertView */,
+				63028E1C1CB55C5500682FBD /* 30-UIStoryboard */,
+				63028E1D1CB55C5500682FBD /* 31-UINavigationBar */,
+				63028E1E1CB55C5500682FBD /* 40-UIViewController */,
+				63028E211CB55C5500682FBD /* 41-UINavigationController */,
+			);
+			path = "01-UI";
+			sourceTree = "<group>";
+		};
+		63028DFC1CB55C5500682FBD /* 01-UIColor */ = {
+			isa = PBXGroup;
+			children = (
+				63028DFD1CB55C5500682FBD /* TB-Header-UIColor.h */,
+				63028DFE1CB55C5500682FBD /* UIColor+TBCore.h */,
+				63028DFF1CB55C5500682FBD /* UIColor+TBCore.m */,
+				63028E001CB55C5500682FBD /* UIColor+TBHex.h */,
+				63028E011CB55C5500682FBD /* UIColor+TBHex.m */,
+			);
+			path = "01-UIColor";
+			sourceTree = "<group>";
+		};
+		63028E021CB55C5500682FBD /* 02-UIFont */ = {
+			isa = PBXGroup;
+			children = (
+				63028E031CB55C5500682FBD /* TB-Header-UIFont.h */,
+				63028E041CB55C5500682FBD /* UIFont+TBCore.h */,
+				63028E051CB55C5500682FBD /* UIFont+TBCore.m */,
+			);
+			path = "02-UIFont";
+			sourceTree = "<group>";
+		};
+		63028E061CB55C5500682FBD /* 20-UIView */ = {
+			isa = PBXGroup;
+			children = (
+				63028E071CB55C5500682FBD /* TB-Header-UIView.h */,
+				63028E081CB55C5500682FBD /* UIView+TBBorder.h */,
+				63028E091CB55C5500682FBD /* UIView+TBBorder.m */,
+				63028E421CB564A900682FBD /* UIView+TBCore.h */,
+				63028E431CB564A900682FBD /* UIView+TBCore.m */,
+				63028E0A1CB55C5500682FBD /* UIView+TBFrame.h */,
+				63028E0B1CB55C5500682FBD /* UIView+TBFrame.m */,
+				63028E0C1CB55C5500682FBD /* UIView+TBHandle.h */,
+				63028E0D1CB55C5500682FBD /* UIView+TBHandle.m */,
+				63028E0E1CB55C5500682FBD /* UIView+TBLine.h */,
+				63028E0F1CB55C5500682FBD /* UIView+TBLine.m */,
+				63028E101CB55C5500682FBD /* UIView+TBTag.h */,
+				63028E111CB55C5500682FBD /* UIView+TBTag.m */,
+			);
+			path = "20-UIView";
+			sourceTree = "<group>";
+		};
+		63028E121CB55C5500682FBD /* 21-UIImageView */ = {
+			isa = PBXGroup;
+			children = (
+				63028E411CB55D2D00682FBD /* TB-Header-UIImageView.h */,
+				63028E361CB55CA100682FBD /* UIImageView+TBCore.h */,
+				63028E371CB55CA100682FBD /* UIImageView+TBCore.m */,
+			);
+			path = "21-UIImageView";
+			sourceTree = "<group>";
+		};
+		63028E131CB55C5500682FBD /* 22-UILabel */ = {
+			isa = PBXGroup;
+			children = (
+				63028E141CB55C5500682FBD /* TB-Header-UILabel.h */,
+				63028E151CB55C5500682FBD /* UILabel+TBResize.h */,
+				63028E161CB55C5500682FBD /* UILabel+TBResize.m */,
+			);
+			path = "22-UILabel";
+			sourceTree = "<group>";
+		};
+		63028E171CB55C5500682FBD /* 23-UIButton */ = {
+			isa = PBXGroup;
+			children = (
+				63028E3C1CB55CC200682FBD /* TB-Header-UIButton.h */,
+				63028E391CB55CAB00682FBD /* UIButton+TBCore.h */,
+				63028E3A1CB55CAB00682FBD /* UIButton+TBCore.m */,
+			);
+			path = "23-UIButton";
+			sourceTree = "<group>";
+		};
+		63028E181CB55C5500682FBD /* 29-UIAlertView */ = {
+			isa = PBXGroup;
+			children = (
+				63028E191CB55C5500682FBD /* TB-Header-UIAlertView.h */,
+				63028E1A1CB55C5500682FBD /* UIAlertView+TBBlock.h */,
+				63028E1B1CB55C5500682FBD /* UIAlertView+TBBlock.m */,
+			);
+			path = "29-UIAlertView";
+			sourceTree = "<group>";
+		};
+		63028E1C1CB55C5500682FBD /* 30-UIStoryboard */ = {
+			isa = PBXGroup;
+			children = (
+				63028E3D1CB55CD000682FBD /* TB-Header-UIStoryboard.h */,
+				63028E301CB55C8200682FBD /* UIStoryboard+TBCore.h */,
+				63028E311CB55C8200682FBD /* UIStoryboard+TBCore.m */,
+			);
+			path = "30-UIStoryboard";
+			sourceTree = "<group>";
+		};
+		63028E1D1CB55C5500682FBD /* 31-UINavigationBar */ = {
+			isa = PBXGroup;
+			children = (
+				63028E3E1CB55CE700682FBD /* TB-Header-UINavigationBar.h */,
+				63028E331CB55C8D00682FBD /* UINavigationBar+TBCore.h */,
+				63028E341CB55C8D00682FBD /* UINavigationBar+TBCore.m */,
+			);
+			path = "31-UINavigationBar";
+			sourceTree = "<group>";
+		};
+		63028E1E1CB55C5500682FBD /* 40-UIViewController */ = {
+			isa = PBXGroup;
+			children = (
+				63028E3F1CB55CF500682FBD /* TB-Header-UIViewController.h */,
+				63028E1F1CB55C5500682FBD /* UIViewController+TBCore.h */,
+				63028E201CB55C5500682FBD /* UIViewController+TBCore.m */,
+			);
+			path = "40-UIViewController";
+			sourceTree = "<group>";
+		};
+		63028E211CB55C5500682FBD /* 41-UINavigationController */ = {
+			isa = PBXGroup;
+			children = (
+				63028E401CB55D0700682FBD /* TB-Header-UINavigationController.h */,
+				63028E221CB55C5500682FBD /* UINavigationController+TBCore.h */,
+				63028E231CB55C5500682FBD /* UINavigationController+TBCore.m */,
+			);
+			path = "41-UINavigationController";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		63028CFB1CB518BD00682FBD /* TBCoreTest */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 63028D131CB518BD00682FBD /* Build configuration list for PBXNativeTarget "TBCoreTest" */;
+			buildPhases = (
+				63028CF81CB518BD00682FBD /* Sources */,
+				63028CF91CB518BD00682FBD /* Frameworks */,
+				63028CFA1CB518BD00682FBD /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = TBCoreTest;
+			productName = TBCoreTest;
+			productReference = 63028CFC1CB518BD00682FBD /* TBCoreTest.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		63028CF41CB518BD00682FBD /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				CLASSPREFIX = TB;
+				LastUpgradeCheck = 0730;
+				ORGANIZATIONNAME = "Bun Le Viet";
+				TargetAttributes = {
+					63028CFB1CB518BD00682FBD = {
+						CreatedOnToolsVersion = 7.3;
+					};
+				};
+			};
+			buildConfigurationList = 63028CF71CB518BD00682FBD /* Build configuration list for PBXProject "TBCoreTest" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 63028CF31CB518BD00682FBD;
+			productRefGroup = 63028CFD1CB518BD00682FBD /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				63028CFB1CB518BD00682FBD /* TBCoreTest */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		63028CFA1CB518BD00682FBD /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				63028D0F1CB518BD00682FBD /* LaunchScreen.storyboard in Resources */,
+				63028D0C1CB518BD00682FBD /* Assets.xcassets in Resources */,
+				63028D0A1CB518BD00682FBD /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		63028CF81CB518BD00682FBD /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				63028DE31CB520FA00682FBD /* NSDate+TBCheck.m in Sources */,
+				63028DE41CB520FA00682FBD /* NSDate+TBCore.m in Sources */,
+				63028D861CB518D400682FBD /* TBBaseViewController.m in Sources */,
+				63028D851CB518D400682FBD /* TBBaseView.m in Sources */,
+				63028DE51CB520FA00682FBD /* NSUserDefaults+TBCore.m in Sources */,
+				63028E281CB55C5500682FBD /* UIView+TBFrame.m in Sources */,
+				63028DD91CB520FA00682FBD /* NSString+TBCheck.m in Sources */,
+				63028E321CB55C8200682FBD /* UIStoryboard+TBCore.m in Sources */,
+				63028D071CB518BD00682FBD /* ViewController.m in Sources */,
+				63028E291CB55C5500682FBD /* UIView+TBHandle.m in Sources */,
+				63028D041CB518BD00682FBD /* AppDelegate.m in Sources */,
+				63028E441CB564A900682FBD /* UIView+TBCore.m in Sources */,
+				63028DE21CB520FA00682FBD /* NSMutableArray+TBObject.m in Sources */,
+				63028E3B1CB55CAB00682FBD /* UIButton+TBCore.m in Sources */,
+				63028DDE1CB520FA00682FBD /* NSString+TBValid.m in Sources */,
+				63028DDB1CB520FA00682FBD /* NSString+TBDevice.m in Sources */,
+				63028DD81CB520FA00682FBD /* NSString+TBChange.m in Sources */,
+				63028E2A1CB55C5500682FBD /* UIView+TBLine.m in Sources */,
+				63028DDD1CB520FA00682FBD /* NSString+TBUrl.m in Sources */,
+				63028E251CB55C5500682FBD /* UIColor+TBHex.m in Sources */,
+				63028D011CB518BD00682FBD /* main.m in Sources */,
+				63028E2C1CB55C5500682FBD /* UILabel+TBResize.m in Sources */,
+				63028E2D1CB55C5500682FBD /* UIAlertView+TBBlock.m in Sources */,
+				63028DDF1CB520FA00682FBD /* NSDictionary+TBObject.m in Sources */,
+				63028DDA1CB520FA00682FBD /* NSString+TBConvert.m in Sources */,
+				63028E2F1CB55C5500682FBD /* UINavigationController+TBCore.m in Sources */,
+				63028DE11CB520FA00682FBD /* NSArray+TBObject.m in Sources */,
+				63028DE01CB520FA00682FBD /* NSMutableDictionary+TBObject.m in Sources */,
+				63028E2E1CB55C5500682FBD /* UIViewController+TBCore.m in Sources */,
+				63028E241CB55C5500682FBD /* UIColor+TBCore.m in Sources */,
+				63028E2B1CB55C5500682FBD /* UIView+TBTag.m in Sources */,
+				63028E271CB55C5500682FBD /* UIView+TBBorder.m in Sources */,
+				63028E351CB55C8D00682FBD /* UINavigationBar+TBCore.m in Sources */,
+				63028D841CB518D400682FBD /* TBBaseObject.m in Sources */,
+				63028E381CB55CA100682FBD /* UIImageView+TBCore.m in Sources */,
+				63028E261CB55C5500682FBD /* UIFont+TBCore.m in Sources */,
+				63028DDC1CB520FA00682FBD /* NSString+TBPath.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		63028D081CB518BD00682FBD /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				63028D091CB518BD00682FBD /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		63028D0D1CB518BD00682FBD /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				63028D0E1CB518BD00682FBD /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		63028D111CB518BD00682FBD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		63028D121CB518BD00682FBD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		63028D141CB518BD00682FBD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = TBCoreTest/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "BunLV-Solution.TBCoreTest";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		63028D151CB518BD00682FBD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = TBCoreTest/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "BunLV-Solution.TBCoreTest";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		63028CF71CB518BD00682FBD /* Build configuration list for PBXProject "TBCoreTest" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				63028D111CB518BD00682FBD /* Debug */,
+				63028D121CB518BD00682FBD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		63028D131CB518BD00682FBD /* Build configuration list for PBXNativeTarget "TBCoreTest" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				63028D141CB518BD00682FBD /* Debug */,
+				63028D151CB518BD00682FBD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 63028CF41CB518BD00682FBD /* Project object */;
+}

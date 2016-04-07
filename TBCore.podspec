@@ -21,30 +21,26 @@ Pod::Spec.new do |s|
   s.platform     = :ios, '7.0'
   s.requires_arc = true
 
-# - - - - - - - - - - - - - - - - - - - - - - - Source files
-  s.source_files = 'TBCore/*.h'
-
-#  s.subspec 'TBCore/01-Define' do |ss|
-#    ss.source_files = 'TBCore/01-Define/*.h'
-#  end
+# - - - - - - - - - - - - - - - - - - - - - - - Source files - - - - - - - - - - - - - - - - - - - - - - -
+  s.source_files = 'TBCore/*', 'TBCore/01-Define/*', 'TBCore/02-Category/**/**/*', 'TBCore/09-Base/**/*'
 
 
-# - - - - - - - - - - - - - - - - - - - - - - - Bundle files
-#  s.resource_bundles = {
-#    'TBCore' => ['TBCore/99-Resouces/*.{png,xib,storyboad}']
-#  }
+# - - - - - - - - - - - - - - - - - - - - - - - Bundle files - - - - - - - - - - - - - - - - - - - - - - -
+  s.resource_bundles = {
+    'TBCore' => ['TBCore/99-Resouces/*.{png,xib,storyboad}']
+  }
 
 
-# - - - - - - - - - - - - - - - - - - - - - - - Public headers
+# - - - - - - - - - - - - - - - - - - - - - - - Public headers - - - - - - - - - - - - - - - - - - - - - - -
   s.public_header_files = 'TBCore/*.h'
-#, 'TBCore/01-Define/*.h'
+#, 'TBCore/**/*.h', 'TBCore/**/**/*.h', 'TBCore/**/**/**/*.h'
 
 
-# - - - - - - - - - - - - - - - - - - - - - - - Frameworks
-  s.frameworks = 'UIKit'
+# - - - - - - - - - - - - - - - - - - - - - - - Frameworks - - - - - - - - - - - - - - - - - - - - - - -
+  s.frameworks = 'UIKit', 'Foundation'
 
 
-# - - - - - - - - - - - - - - - - - - - - - - - Dependencies
+# - - - - - - - - - - - - - - - - - - - - - - - Dependencies - - - - - - - - - - - - - - - - - - - - - - -
   # s.dependency 'AFNetworking', '~> 2.3'
 
 end

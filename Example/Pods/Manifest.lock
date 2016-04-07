@@ -1,5 +1,5 @@
 PODS:
-  - TBCore (0.1.0)
+  - TBCore (0.0.1)
 
 DEPENDENCIES:
   - TBCore (from `../`)
@@ -9,6 +9,6 @@ EXTERNAL SOURCES:
     :path: ../
 
 SPEC CHECKSUMS:
-  TBCore: b83d97f72cc9a5d4d71ce374c3b96d86908148cf
+  TBCore: e0e03a05611106e930a57e6fdb35fec2b8f6b814
 
 COCOAPODS: 0.39.0
