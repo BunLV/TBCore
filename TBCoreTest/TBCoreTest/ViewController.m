@@ -8,7 +8,7 @@
 
 #import "ViewController.h"
 
-#import "TB-Header.h"
+#import "TBCore.h"
 
 @interface ViewController ()
 

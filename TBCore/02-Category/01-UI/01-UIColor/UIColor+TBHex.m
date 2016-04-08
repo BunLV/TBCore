@@ -8,7 +8,7 @@
 
 #import "UIColor+TBHex.h"
 
-#import "TB-Header.h"
+#import "TBCore.h"
 
 @implementation UIColor (TBHex)
 

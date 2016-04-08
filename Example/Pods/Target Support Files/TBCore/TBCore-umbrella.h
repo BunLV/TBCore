@@ -1,6 +1,6 @@
 #import <UIKit/UIKit.h>
 
-#import "TB-Header.h"
+#import "TBCore.h"
 #import "TB-Header-Define.h"
 #import "TBDefineCore.h"
 #import "TB-Header-UIColor.h"

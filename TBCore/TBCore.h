@@ -1,13 +1,13 @@
 //
-//  TB-Header.h
+//  TBCore.h
 //  TBCoreTest
 //
-//  Created by Bun Le Viet on 4/6/16.
+//  Created by Bun Le Viet on 4/8/16.
 //  Copyright © 2016 Bun Le Viet. All rights reserved.
 //
 
-#ifndef TB_Header_h
-#define TB_Header_h
+#ifndef TBCore_h
+#define TBCore_h
 
 // - - - - - - - - - Define - - - - - - - - -
 #   import "TB-Header-Define.h"
@@ -47,4 +47,5 @@
 #   import "TBBaseViewController.h"
 #   import "TBBaseTableViewController.h"
 
-#endif /* TB_Header_h */
+
+#endif /* TBCore_h */

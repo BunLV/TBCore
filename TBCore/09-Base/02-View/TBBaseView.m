@@ -8,7 +8,7 @@
 
 #import "TBBaseView.h"
 
-#import "TB-Header.h"
+#import "TBCore.h"
 
 @implementation TBBaseView
 

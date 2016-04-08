@@ -8,7 +8,7 @@
 
 #import "UIView+TBFrame.h"
 
-#import "TB-Header.h"
+#import "TBCore.h"
 
 @implementation UIView (TBFrame)
 

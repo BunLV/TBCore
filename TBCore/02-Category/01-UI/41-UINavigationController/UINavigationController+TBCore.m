@@ -8,7 +8,7 @@
 
 #import "UINavigationController+TBCore.h"
 
-#import "TB-Header.h"
+#import "TBCore.h"
 
 @implementation UINavigationController (TBCore)
 

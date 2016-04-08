@@ -8,7 +8,7 @@
 
 #import "TBBaseTableViewController.h"
 
-#import "TB-Header.h"
+#import "TBCore.h"
 
 @implementation TBBaseTableViewController
 

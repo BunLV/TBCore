@@ -8,7 +8,7 @@
 
 #import "UILabel+TBResize.h"
 
-#import "TB-Header.h"
+#import "TBCore.h"
 
 @implementation UILabel (TBResize)
 

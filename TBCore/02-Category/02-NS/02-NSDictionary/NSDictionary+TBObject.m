@@ -8,7 +8,7 @@
 
 #import "NSDictionary+TBObject.h"
 
-#import "TB-Header.h"
+#import "TBCore.h"
 
 @implementation NSDictionary (TBObject)
 
