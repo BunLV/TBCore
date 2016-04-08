@@ -7,6 +7,7 @@
 //
 
 #import "TBViewController.h"
+#import <TBCore/TB-Header.h>
 
 @interface TBViewController ()
 
@@ -18,6 +19,8 @@
 {
     [super viewDidLoad];
 	// Do any additional setup after loading the view, typically from a nib.
+    
+    [UIAlertView tb_showAlertViewWithMessage:@"" withCancelButtonTitle:@"" tapBlock:nil];
 }
 
 - (void)didReceiveMemoryWarning

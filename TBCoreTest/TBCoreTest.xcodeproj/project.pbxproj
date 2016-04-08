@@ -54,6 +54,8 @@
 		633A758D1CB6443200576F91 /* TBAFHTTPSessionManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 633A75881CB6443200576F91 /* TBAFHTTPSessionManager.m */; };
 		633A758E1CB6443200576F91 /* TBService+Demo.m in Sources */ = {isa = PBXBuildFile; fileRef = 633A758A1CB6443200576F91 /* TBService+Demo.m */; };
 		633A758F1CB6443200576F91 /* TBService.m in Sources */ = {isa = PBXBuildFile; fileRef = 633A758C1CB6443200576F91 /* TBService.m */; };
+		63EC7ED51CB67CCB00616634 /* libAFNetworking.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 63EC7ED31CB67CCB00616634 /* libAFNetworking.a */; };
+		63EC7ED61CB67CCB00616634 /* libSVPullToRefresh.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 63EC7ED41CB67CCB00616634 /* libSVPullToRefresh.a */; };
 		B5DB67A54A3E68E5C57DFE76 /* libPods-TBCoreTest.a in Frameworks */ = {isa = PBXBuildFile; fileRef = AF9EC47C63A6DC437E655081 /* libPods-TBCoreTest.a */; };
 /* End PBXBuildFile section */
 
@@ -170,6 +172,8 @@
 		633A758A1CB6443200576F91 /* TBService+Demo.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "TBService+Demo.m"; sourceTree = "<group>"; };
 		633A758B1CB6443200576F91 /* TBService.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TBService.h; sourceTree = "<group>"; };
 		633A758C1CB6443200576F91 /* TBService.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TBService.m; sourceTree = "<group>"; };
+		63EC7ED31CB67CCB00616634 /* libAFNetworking.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libAFNetworking.a; path = "../../../../../../Library/Developer/Xcode/DerivedData/TBCoreTest-dikiqdraozrnktbcgmechjdabtdu/Build/Products/Debug-iphoneos/libAFNetworking.a"; sourceTree = "<group>"; };
+		63EC7ED41CB67CCB00616634 /* libSVPullToRefresh.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libSVPullToRefresh.a; path = "../../../../../../Library/Developer/Xcode/DerivedData/TBCoreTest-dikiqdraozrnktbcgmechjdabtdu/Build/Products/Debug-iphoneos/libSVPullToRefresh.a"; sourceTree = "<group>"; };
 		8DD7120C14152A56A068CB8D /* Pods-TBCoreTest.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TBCoreTest.release.xcconfig"; path = "Pods/Target Support Files/Pods-TBCoreTest/Pods-TBCoreTest.release.xcconfig"; sourceTree = "<group>"; };
 		AF9EC47C63A6DC437E655081 /* libPods-TBCoreTest.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-TBCoreTest.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -179,6 +183,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				63EC7ED51CB67CCB00616634 /* libAFNetworking.a in Frameworks */,
+				63EC7ED61CB67CCB00616634 /* libSVPullToRefresh.a in Frameworks */,
 				B5DB67A54A3E68E5C57DFE76 /* libPods-TBCoreTest.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -557,6 +563,8 @@
 		D2F0972E390D3A0F915C6741 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				63EC7ED31CB67CCB00616634 /* libAFNetworking.a */,
+				63EC7ED41CB67CCB00616634 /* libSVPullToRefresh.a */,
 				AF9EC47C63A6DC437E655081 /* libPods-TBCoreTest.a */,
 			);
 			name = Frameworks;
@@ -843,6 +851,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = TBCoreTest/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
@@ -859,6 +868,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = TBCoreTest/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",

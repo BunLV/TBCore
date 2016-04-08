@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = "TBCore"
-  s.version          = "0.0.3"
+  s.version          = "0.0.4"
   s.summary          = "TBCore is a iOS framework. You have beauty project and stable. It will down time development for you"
   s.description      = "TBCore allows configure & create base to any iOS Project. Below are services needed to be implement basic funtion. so it's help to you can write short code and meanable. So you will the clear source code"
   s.homepage         = "https://github.com/BunLV/TBCore"
@@ -22,7 +22,7 @@ Pod::Spec.new do |s|
   s.requires_arc = true
 
 # - - - - - - - - - - - - - - - - - - - - - - - Source files - - - - - - - - - - - - - - - - - - - - - - -
-  s.source_files = 'TBCore/*', 'TBCore/01-Define/*', 'TBCore/02-Category/**/**/*', 'TBCore/09-Base/**/*'
+  s.source_files = 'TBCore/*', 'TBCore/01-Define/*', 'TBCore/02-Category/**/**/*', 'TBCore/08-Service/*', 'TBCore/09-Base/**/*'
 
 
 # - - - - - - - - - - - - - - - - - - - - - - - Bundle files - - - - - - - - - - - - - - - - - - - - - - -
@@ -32,8 +32,7 @@ Pod::Spec.new do |s|
 
 
 # - - - - - - - - - - - - - - - - - - - - - - - Public headers - - - - - - - - - - - - - - - - - - - - - - -
-  s.public_header_files = 'TBCore/*.h'
-#, 'TBCore/**/*.h', 'TBCore/**/**/*.h', 'TBCore/**/**/**/*.h'
+  s.public_header_files = 'TBCore/*.h', 'TBCore/**/*.h', 'TBCore/**/**/*.h', 'TBCore/**/**/**/*.h'
 
 
 # - - - - - - - - - - - - - - - - - - - - - - - Frameworks - - - - - - - - - - - - - - - - - - - - - - -

@@ -8,17 +8,30 @@
 
 #import "UIViewController+TBCore.h"
 
+#import "TB-Header-Define.h"
+
 @implementation UIViewController (TBCore)
 
 #pragma mark - Get
 - (UIViewController *)tb_rootViewController
 {
-    return nil;
+    UIWindow *window = [[[UIApplication sharedApplication] windows] objectAtIndex:0];
+    UIViewController *rootVC = window.rootViewController;
+    
+    return rootVC;
 }
 
-- (UIViewController *)tb_topViewController
+- (UIViewController *)tb_topMostViewController
 {
-    return nil;
+    UIWindow *window = [[[UIApplication sharedApplication] windows] objectAtIndex:0];
+    UIViewController *topMostVC = window.rootViewController;
+    
+    while (topMostVC.presentedViewController)
+    {
+        topMostVC = topMostVC.presentedViewController;
+    }
+    
+    return topMostVC;
 }
 
 @end

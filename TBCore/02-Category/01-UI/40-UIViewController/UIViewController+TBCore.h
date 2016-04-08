@@ -10,4 +10,8 @@
 
 @interface UIViewController (TBCore)
 
+#pragma mark - Get
+- (UIViewController *)tb_rootViewController;
+- (UIViewController *)tb_topMostViewController;
+
 @end

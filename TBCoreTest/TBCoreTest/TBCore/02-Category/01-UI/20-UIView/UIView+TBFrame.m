@@ -15,7 +15,7 @@
 #pragma mark - Get
 - (CGRect)tb_frame
 {
-    if ( TB_DETECT_IOS_8_X || TB_DETECT_DEVICE_ORIENTATION_PORTRAIT )
+    if ( TB_DETECT_IOS_8_X || TB_INTERFACE_ORIENTATION_IS_PORTRAIT )
     {
         return self.frame;
     }

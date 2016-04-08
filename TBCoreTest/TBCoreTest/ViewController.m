@@ -8,6 +8,8 @@
 
 #import "ViewController.h"
 
+#import "TB-Header.h"
+
 @interface ViewController ()
 
 @end
@@ -17,6 +19,12 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view, typically from a nib.
+    
+    TB_REGISTER_NOTIFICATION();
+    
+    TB_ALLOW_WARNINGS(
+        
+    );
 }
 
 - (void)didReceiveMemoryWarning {

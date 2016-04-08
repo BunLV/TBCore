@@ -16,10 +16,12 @@
 {
     NSArray *fontFamilies = [UIFont familyNames];
     
+    NSString *fontFamily;
+    NSArray *fontNames;
     for (int i = 0; i < [fontFamilies count]; i++)
     {
-        NSString *fontFamily = [fontFamilies objectAtIndex:i];
-        NSArray *fontNames = [UIFont fontNamesForFamilyName:[fontFamilies objectAtIndex:i]];
+        fontFamily = [fontFamilies objectAtIndex:i];
+        fontNames = [UIFont fontNamesForFamilyName:[fontFamilies objectAtIndex:i]];
         
         TBLog(@"%@: %@", fontFamily, fontNames);
     }
@@ -29,13 +31,15 @@
 {
     NSArray *fontFamilies = [UIFont familyNames];
     
+    NSString *fontFamily;
+    NSArray *fontNames;
     for (int i = 0; i < [fontFamilies count]; i++)
     {
-        NSString *fontFamily = [fontFamilies objectAtIndex:i];
+        fontFamily = [fontFamilies objectAtIndex:i];
         
         if ( [[fontFamily stringByReplacingOccurrencesOfString:@" " withString:@""] isEqualToString:_fontFamily] )
         {
-            NSArray *fontNames = [UIFont fontNamesForFamilyName:[fontFamilies objectAtIndex:i]];
+            fontNames = [UIFont fontNamesForFamilyName:[fontFamilies objectAtIndex:i]];
             
             TBLog(@"%@: %@", fontFamily, fontNames);
         }

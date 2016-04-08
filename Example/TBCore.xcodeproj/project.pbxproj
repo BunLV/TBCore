@@ -23,6 +23,8 @@
 		6003F5BC195388D20070C39A /* Tests.m in Sources */ = {isa = PBXBuildFile; fileRef = 6003F5BB195388D20070C39A /* Tests.m */; };
 		63B5E20F1CB4EE9200D8E6D9 /* Pods_TBCore_Tests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 63B5E20D1CB4EE9200D8E6D9 /* Pods_TBCore_Tests.framework */; };
 		63B5E2101CB4EE9200D8E6D9 /* TBCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 63B5E20E1CB4EE9200D8E6D9 /* TBCore.framework */; };
+		63EC7ED11CB67C7200616634 /* AFNetworking.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 63EC7ECF1CB67C7200616634 /* AFNetworking.framework */; };
+		63EC7ED21CB67C7200616634 /* SVPullToRefresh.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 63EC7ED01CB67C7200616634 /* SVPullToRefresh.framework */; };
 		7E0C0AC9C13906D7F22BE274 /* Pods_TBCore_Example.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CDFBB964615A6C3EEEE12083 /* Pods_TBCore_Example.framework */; };
 		873B8AEB1B1F5CCA007FD442 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 873B8AEA1B1F5CCA007FD442 /* Main.storyboard */; };
 /* End PBXBuildFile section */
@@ -62,6 +64,8 @@
 		609C1F5C77ABB0F079135B6F /* Pods-TBCore_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TBCore_Example.debug.xcconfig"; path = "Pods/Target Support Files/Pods-TBCore_Example/Pods-TBCore_Example.debug.xcconfig"; sourceTree = "<group>"; };
 		63B5E20D1CB4EE9200D8E6D9 /* Pods_TBCore_Tests.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Pods_TBCore_Tests.framework; path = "Pods/../build/Debug-iphoneos/Pods_TBCore_Tests.framework"; sourceTree = "<group>"; };
 		63B5E20E1CB4EE9200D8E6D9 /* TBCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = TBCore.framework; path = "../../../../../../Library/Developer/Xcode/DerivedData/TBCore-eyjftrbesuhakhahhjuinatwamwu/Build/Products/Debug-iphoneos/TBCore.framework"; sourceTree = "<group>"; };
+		63EC7ECF1CB67C7200616634 /* AFNetworking.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AFNetworking.framework; path = "../../../../../../Library/Developer/Xcode/DerivedData/TBCore-eyjftrbesuhakhahhjuinatwamwu/Build/Products/Debug-iphoneos/AFNetworking.framework"; sourceTree = "<group>"; };
+		63EC7ED01CB67C7200616634 /* SVPullToRefresh.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SVPullToRefresh.framework; path = "../../../../../../Library/Developer/Xcode/DerivedData/TBCore-eyjftrbesuhakhahhjuinatwamwu/Build/Products/Debug-iphoneos/SVPullToRefresh.framework"; sourceTree = "<group>"; };
 		7D063B768E4EC017DB8AD20D /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../README.md; sourceTree = "<group>"; };
 		7D646F10F880DDD9429F50DB /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
 		819675DEAA5BDDED1D0F198A /* TBCore.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = TBCore.podspec; path = ../TBCore.podspec; sourceTree = "<group>"; };
@@ -76,6 +80,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				63EC7ED11CB67C7200616634 /* AFNetworking.framework in Frameworks */,
+				63EC7ED21CB67C7200616634 /* SVPullToRefresh.framework in Frameworks */,
 				63B5E20F1CB4EE9200D8E6D9 /* Pods_TBCore_Tests.framework in Frameworks */,
 				63B5E2101CB4EE9200D8E6D9 /* TBCore.framework in Frameworks */,
 				6003F590195388D20070C39A /* CoreGraphics.framework in Frameworks */,
@@ -134,6 +140,8 @@
 		6003F58C195388D20070C39A /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				63EC7ECF1CB67C7200616634 /* AFNetworking.framework */,
+				63EC7ED01CB67C7200616634 /* SVPullToRefresh.framework */,
 				63B5E20D1CB4EE9200D8E6D9 /* Pods_TBCore_Tests.framework */,
 				63B5E20E1CB4EE9200D8E6D9 /* TBCore.framework */,
 				6003F58D195388D20070C39A /* Foundation.framework */,
@@ -529,6 +537,16 @@
 				GCC_PREFIX_HEADER = "TBCore/TBCore-Prefix.pch";
 				INFOPLIST_FILE = "TBCore/TBCore-Info.plist";
 				MODULE_NAME = ExampleApp;
+				OTHER_LDFLAGS = (
+					"$(inherited)",
+					"-framework",
+					"\"AFNetworking\"",
+					"-framework",
+					"\"SVPullToRefresh\"",
+					"-framework",
+					"\"TBCore\"",
+					"-ObjC",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.demo.${PRODUCT_NAME:rfc1034identifier}";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
@@ -549,6 +567,16 @@
 				GCC_PREFIX_HEADER = "TBCore/TBCore-Prefix.pch";
 				INFOPLIST_FILE = "TBCore/TBCore-Info.plist";
 				MODULE_NAME = ExampleApp;
+				OTHER_LDFLAGS = (
+					"$(inherited)",
+					"-framework",
+					"\"AFNetworking\"",
+					"-framework",
+					"\"SVPullToRefresh\"",
+					"-framework",
+					"\"TBCore\"",
+					"-ObjC",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.demo.${PRODUCT_NAME:rfc1034identifier}";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
