@@ -492,10 +492,10 @@
 			children = (
 				63C98C541CB767D4008C197E /* TBAFHTTPSessionManager.h */,
 				63C98C551CB767D4008C197E /* TBAFHTTPSessionManager.m */,
-				63C98C561CB767D4008C197E /* TBService+Demo.h */,
-				63C98C571CB767D4008C197E /* TBService+Demo.m */,
 				63C98C581CB767D4008C197E /* TBService.h */,
 				63C98C591CB767D4008C197E /* TBService.m */,
+				63C98C561CB767D4008C197E /* TBService+Demo.h */,
+				63C98C571CB767D4008C197E /* TBService+Demo.m */,
 			);
 			path = "08-Service";
 			sourceTree = "<group>";
