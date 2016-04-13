@@ -19,14 +19,14 @@
     // View background
     UIView *viewNavBar = view;
     
-    CGRect frame = self.navigationController.navigationBar.frame;
+    CGRect frame = self.navigationBar.frame;
     frame.origin.x = 0.f;
     frame.origin.y = 0.f;
     viewNavBar.frame = frame;
     viewNavBar.tag = TB_NAV_BAR_TAG;
     
     // Get navBar current
-    UINavigationBar *navBar = self.navigationController.navigationBar;
+    UINavigationBar *navBar = self.navigationBar;
     
     // Remove navigation bar custom view before because allway add navgation bar
     for ( UIView *view in navBar.subviews )
