@@ -31,6 +31,7 @@
 #import "UIViewController+TBCore.h"
 #import "TB-Header-UINavigationController.h"
 #import "UINavigationController+TBCore.h"
+#import "UINavigationController+TBNavBarCustom.h"
 #import "NSString+TBChange.h"
 #import "NSString+TBCheck.h"
 #import "NSString+TBConvert.h"

@@ -15,7 +15,7 @@
 #pragma mark - Push
 - (void)tb_pushViewController:(UIViewController *)_viewController animated:(BOOL)_animated
 {
-    if ( _viewController )
+    if ( !_viewController )
     {
         return;
     }

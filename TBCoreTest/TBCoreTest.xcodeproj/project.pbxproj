@@ -54,6 +54,7 @@
 		63C98C941CB767D4008C197E /* UITableViewCell+TBBaseTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 63C98C661CB767D4008C197E /* UITableViewCell+TBBaseTableViewCell.m */; };
 		63C98C951CB767D4008C197E /* TBBaseTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 63C98C691CB767D4008C197E /* TBBaseTableViewController.m */; };
 		63C98C961CB767D4008C197E /* TBBaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 63C98C6B1CB767D4008C197E /* TBBaseViewController.m */; };
+		63DDD4DF1CBDE8A000AA2BE5 /* UINavigationController+TBNavBarCustom.m in Sources */ = {isa = PBXBuildFile; fileRef = 63DDD4DE1CBDE8A000AA2BE5 /* UINavigationController+TBNavBarCustom.m */; };
 		63EC7ED51CB67CCB00616634 /* libAFNetworking.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 63EC7ED31CB67CCB00616634 /* libAFNetworking.a */; };
 		63EC7ED61CB67CCB00616634 /* libSVPullToRefresh.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 63EC7ED41CB67CCB00616634 /* libSVPullToRefresh.a */; };
 		B5DB67A54A3E68E5C57DFE76 /* libPods-TBCoreTest.a in Frameworks */ = {isa = PBXBuildFile; fileRef = AF9EC47C63A6DC437E655081 /* libPods-TBCoreTest.a */; };
@@ -172,6 +173,8 @@
 		63C98C6A1CB767D4008C197E /* TBBaseViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TBBaseViewController.h; sourceTree = "<group>"; };
 		63C98C6B1CB767D4008C197E /* TBBaseViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TBBaseViewController.m; sourceTree = "<group>"; };
 		63C98C6D1CB767D4008C197E /* TBCore.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TBCore.h; sourceTree = "<group>"; };
+		63DDD4DD1CBDE8A000AA2BE5 /* UINavigationController+TBNavBarCustom.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UINavigationController+TBNavBarCustom.h"; sourceTree = "<group>"; };
+		63DDD4DE1CBDE8A000AA2BE5 /* UINavigationController+TBNavBarCustom.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UINavigationController+TBNavBarCustom.m"; sourceTree = "<group>"; };
 		63EC7ED31CB67CCB00616634 /* libAFNetworking.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libAFNetworking.a; path = "../../../../../../Library/Developer/Xcode/DerivedData/TBCoreTest-dikiqdraozrnktbcgmechjdabtdu/Build/Products/Debug-iphoneos/libAFNetworking.a"; sourceTree = "<group>"; };
 		63EC7ED41CB67CCB00616634 /* libSVPullToRefresh.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libSVPullToRefresh.a; path = "../../../../../../Library/Developer/Xcode/DerivedData/TBCoreTest-dikiqdraozrnktbcgmechjdabtdu/Build/Products/Debug-iphoneos/libSVPullToRefresh.a"; sourceTree = "<group>"; };
 		8DD7120C14152A56A068CB8D /* Pods-TBCoreTest.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TBCoreTest.release.xcconfig"; path = "Pods/Target Support Files/Pods-TBCoreTest/Pods-TBCoreTest.release.xcconfig"; sourceTree = "<group>"; };
@@ -403,6 +406,8 @@
 				63C98C291CB767D4008C197E /* TB-Header-UINavigationController.h */,
 				63C98C2A1CB767D4008C197E /* UINavigationController+TBCore.h */,
 				63C98C2B1CB767D4008C197E /* UINavigationController+TBCore.m */,
+				63DDD4DD1CBDE8A000AA2BE5 /* UINavigationController+TBNavBarCustom.h */,
+				63DDD4DE1CBDE8A000AA2BE5 /* UINavigationController+TBNavBarCustom.m */,
 			);
 			path = "41-UINavigationController";
 			sourceTree = "<group>";
@@ -716,6 +721,7 @@
 				63C98C881CB767D4008C197E /* NSArray+TBObject.m in Sources */,
 				63C98C7C1CB767D4008C197E /* UINavigationBar+TBCore.m in Sources */,
 				63C98C781CB767D4008C197E /* UILabel+TBResize.m in Sources */,
+				63DDD4DF1CBDE8A000AA2BE5 /* UINavigationController+TBNavBarCustom.m in Sources */,
 				63C98C851CB767D4008C197E /* NSString+TBValid.m in Sources */,
 				63C98C7E1CB767D4008C197E /* UINavigationController+TBCore.m in Sources */,
 				63C98C941CB767D4008C197E /* UITableViewCell+TBBaseTableViewCell.m in Sources */,

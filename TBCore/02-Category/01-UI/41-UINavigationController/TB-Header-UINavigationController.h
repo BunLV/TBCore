@@ -10,5 +10,6 @@
 #define TB_Header_UINavigationController_h
 
 #   import "UINavigationController+TBCore.h"
+#   import "UINavigationController+TBNavBarCustom.h"
 
 #endif /* TB_Header_UINavigationController_h */
