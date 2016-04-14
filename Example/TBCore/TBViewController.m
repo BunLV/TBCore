@@ -7,7 +7,7 @@
 //
 
 #import "TBViewController.h"
-#import <TBCore/TB-Header.h>
+#import <TBCore/TBCore.h>
 
 @interface TBViewController ()
 

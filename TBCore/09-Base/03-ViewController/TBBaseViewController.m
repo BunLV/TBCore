@@ -136,22 +136,22 @@
 #pragma mark + Appear
 - (void)tb_willAppear
 {
-    TBLog(@"");
+    
 }
 
 - (void)tb_didAppear
 {
-    TBLog(@"");
+    
 }
 
 - (void)tb_willDisappear
 {
-    TBLog(@"");
+    
 }
 
 - (void)tb_didDisappear
 {
-    TBLog(@"");
+    
 }
 
 @end

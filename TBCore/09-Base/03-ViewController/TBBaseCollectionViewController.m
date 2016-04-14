@@ -1,18 +1,22 @@
 //
-//  TBBaseTableViewController.m
-//  TBCoreTest
+//  TBBaseCollectionViewController.m
+//  Pods
 //
-//  Created by Bun Le Viet on 4/7/16.
-//  Copyright © 2016 Bun Le Viet. All rights reserved.
+//  Created by Bun Le Viet on 4/14/16.
+//
 //
 
-#import "TBBaseTableViewController.h"
+#import "TBBaseCollectionViewController.h"
 
 #import "TBCore.h"
 
-@implementation TBBaseTableViewController
+@interface TBBaseCollectionViewController () <UICollectionViewDataSource, UICollectionViewDelegate>
 
-#pragma mark - View lifecycle
+@end
+
+@implementation TBBaseCollectionViewController
+
+#pragma mark - View lifecyle
 - (void)viewDidLoad
 {
     [super viewDidLoad];
@@ -62,29 +66,24 @@
 
 #pragma mark - IBAction
 
-#pragma mark - UITableView
+#pragma mark - UICollectionView
 #pragma mark + DataSource
-- (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView
-{
-    return 1;
-}
-
-- (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
+- (NSInteger)collectionView:(UICollectionView *)collectionView numberOfItemsInSection:(NSInteger)section
 {
     return self.arrData.count;
 }
 
-- (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
+- (UICollectionViewCell *)collectionView:(UICollectionView *)collectionView cellForItemAtIndexPath:(NSIndexPath *)indexPath
 {
-    TBBaseObject *object = [self.arrData objectAtIndex:indexPath.row];
+    TBBaseObject *object = [self.arrData tb_objectAtIndex:indexPath.row];
     
     NSString *cellIdentifier = object.cellIdentifier;
     
-    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:cellIdentifier];
+    UICollectionViewCell *cell = [collectionView dequeueReusableCellWithReuseIdentifier:cellIdentifier forIndexPath:indexPath];
     
     if ( !cell )
     {
-        cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:@"CELL_FAKE"];
+        cell = [[UICollectionViewCell alloc] initWithFrame:CGRectZero];
         
         return cell;
     }
@@ -97,27 +96,20 @@
     return cell;
 }
 
-- (void)cellForRow:(UITableViewCell *)_cell
+- (void)cellForRow:(UICollectionViewCell *)_cell
 {
     
 }
 
 #pragma mark + Delegate
-- (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath
+- (void)collectionView:(UICollectionView *)collectionView didSelectItemAtIndexPath:(NSIndexPath *)indexPath
 {
-    TBBaseObject *object = [self.arrData objectAtIndex:indexPath.row];
-    
-    return object.cellHeight;
-}
-
-- (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
-{
-    [tableView deselectRowAtIndexPath:indexPath animated:YES];
+    [collectionView deselectItemAtIndexPath:indexPath animated:YES];
     
     TBBaseObject *object = [self.arrData objectAtIndex:indexPath.row];
     
     [self didSelectWithObject:object];
-    [self didSelectWithObject:object withCell:[tableView cellForRowAtIndexPath:indexPath]];
+    [self didSelectWithObject:object withCell:[collectionView cellForItemAtIndexPath:indexPath]];
 }
 
 - (void)didSelectWithObject:(id)_object
@@ -125,7 +117,7 @@
     
 }
 
-- (void)didSelectWithObject:(id)_object withCell:(UITableViewCell *)_cell
+- (void)didSelectWithObject:(id)_object withCell:(UICollectionViewCell *)_cell
 {
     
 }
@@ -135,7 +127,8 @@
 {
     __weak typeof(self) blockSelf = self;
     
-    [self.tbvData addPullToRefreshWithActionHandler:^{
+    self.clvData.alwaysBounceVertical = YES;
+    [self.clvData addPullToRefreshWithActionHandler:^{
         
         [blockSelf processForRefresh];
     }];
@@ -150,7 +143,7 @@
 {
     __weak typeof(self) blockSelf = self;
     
-    [self.tbvData addInfiniteScrollingWithActionHandler:^{
+    [self.clvData addInfiniteScrollingWithActionHandler:^{
         
         [blockSelf processForLoadMore];
     }];
@@ -164,10 +157,10 @@
 #pragma mark - Data
 - (void)reloadData
 {
-    self.tbvData.dataSource = (id)self;
-    self.tbvData.delegate = (id)self;
+    self.clvData.dataSource = (id)self;
+    self.clvData.delegate = (id)self;
     
-    [self.tbvData reloadData];
+    [self.clvData reloadData];
 }
 
 - (void)prepareData

@@ -56,9 +56,12 @@
 #import "TBService.h"
 #import "TBBaseList.h"
 #import "TBBaseObject.h"
+#import "TBBaseCollectionViewCell.h"
 #import "TBBaseTableViewCell.h"
 #import "TBBaseView.h"
+#import "UICollectionViewCell+TBBaseCollectionViewCell.h"
 #import "UITableViewCell+TBBaseTableViewCell.h"
+#import "TBBaseCollectionViewController.h"
 #import "TBBaseTableViewController.h"
 #import "TBBaseViewController.h"
 

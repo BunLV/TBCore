@@ -1,28 +1,28 @@
 //
-//  TBBaseTableViewController.h
-//  TBCoreTest
+//  TBBaseCollectionViewController.h
+//  Pods
 //
-//  Created by Bun Le Viet on 4/7/16.
-//  Copyright © 2016 Bun Le Viet. All rights reserved.
+//  Created by Bun Le Viet on 4/14/16.
+//
 //
 
 #import <SVPullToRefresh/SVPullToRefresh.h>
 
 #import "TBBaseViewController.h"
 
-@interface TBBaseTableViewController : TBBaseViewController
+@interface TBBaseCollectionViewController : TBBaseViewController
 
-@property (weak, nonatomic) IBOutlet UITableView *tbvData;
+@property (weak, nonatomic) IBOutlet UICollectionView *clvData;
 
 @property (strong, nonatomic) NSMutableArray *arrData;
 
 #pragma mark - UITableView
 #pragma marl + Datasource
-- (void)cellForRow:(UITableViewCell *)_cell;
+- (void)cellForRow:(UICollectionViewCell *)_cell;
 
 #pragma mark + Delegate
 - (void)didSelectWithObject:(id)_object;
-- (void)didSelectWithObject:(id)_object withCell:(UITableViewCell *)_cell;
+- (void)didSelectWithObject:(id)_object withCell:(UICollectionViewCell *)_cell;
 
 #pragma mark + SVPullToRefresh
 - (void)addPullToRefresh;

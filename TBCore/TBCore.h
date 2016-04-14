@@ -47,9 +47,12 @@
 #   import "TBBaseView.h"
 #   import "TBBaseTableViewCell.h"
 #   import "UITableViewCell+TBBaseTableViewCell.h"
+#   import "TBBaseCollectionViewCell.h"
+#   import "UICollectionViewCell+TBBaseCollectionViewCell.h"
 
 #   import "TBBaseViewController.h"
 #   import "TBBaseTableViewController.h"
+#   import "TBBaseCollectionViewController.h"
 
 
 #endif /* TBCore_h */

@@ -8,18 +8,20 @@
 
 #import "UITableViewCell+TBBaseTableViewCell.h"
 
+#import "TBCore.h"
+
 @implementation UITableViewCell (TBBaseTableViewCell)
 
 #pragma mark - UI
 - (void)mappingUI
 {
-    
+    TBLog(@"Need overwritter");
 }
 
 #pragma mark - Data
 - (void)fetchData:(id)_object
 {
-    
+    TBLog(@"Need overwritter");
 }
 
 @end

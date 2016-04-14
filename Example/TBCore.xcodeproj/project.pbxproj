@@ -23,6 +23,7 @@
 		6003F5BC195388D20070C39A /* Tests.m in Sources */ = {isa = PBXBuildFile; fileRef = 6003F5BB195388D20070C39A /* Tests.m */; };
 		63B5E20F1CB4EE9200D8E6D9 /* Pods_TBCore_Tests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 63B5E20D1CB4EE9200D8E6D9 /* Pods_TBCore_Tests.framework */; };
 		63B5E2101CB4EE9200D8E6D9 /* TBCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 63B5E20E1CB4EE9200D8E6D9 /* TBCore.framework */; };
+		63EA73E01CBF56D1008B3082 /* TBTestCollectionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 63EA73DF1CBF56D1008B3082 /* TBTestCollectionViewController.m */; };
 		63EC7ED11CB67C7200616634 /* AFNetworking.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 63EC7ECF1CB67C7200616634 /* AFNetworking.framework */; };
 		63EC7ED21CB67C7200616634 /* SVPullToRefresh.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 63EC7ED01CB67C7200616634 /* SVPullToRefresh.framework */; };
 		7E0C0AC9C13906D7F22BE274 /* Pods_TBCore_Example.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CDFBB964615A6C3EEEE12083 /* Pods_TBCore_Example.framework */; };
@@ -64,6 +65,8 @@
 		609C1F5C77ABB0F079135B6F /* Pods-TBCore_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TBCore_Example.debug.xcconfig"; path = "Pods/Target Support Files/Pods-TBCore_Example/Pods-TBCore_Example.debug.xcconfig"; sourceTree = "<group>"; };
 		63B5E20D1CB4EE9200D8E6D9 /* Pods_TBCore_Tests.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Pods_TBCore_Tests.framework; path = "Pods/../build/Debug-iphoneos/Pods_TBCore_Tests.framework"; sourceTree = "<group>"; };
 		63B5E20E1CB4EE9200D8E6D9 /* TBCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = TBCore.framework; path = "../../../../../../Library/Developer/Xcode/DerivedData/TBCore-eyjftrbesuhakhahhjuinatwamwu/Build/Products/Debug-iphoneos/TBCore.framework"; sourceTree = "<group>"; };
+		63EA73DE1CBF56D1008B3082 /* TBTestCollectionViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TBTestCollectionViewController.h; sourceTree = "<group>"; };
+		63EA73DF1CBF56D1008B3082 /* TBTestCollectionViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TBTestCollectionViewController.m; sourceTree = "<group>"; };
 		63EC7ECF1CB67C7200616634 /* AFNetworking.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AFNetworking.framework; path = "../../../../../../Library/Developer/Xcode/DerivedData/TBCore-eyjftrbesuhakhahhjuinatwamwu/Build/Products/Debug-iphoneos/AFNetworking.framework"; sourceTree = "<group>"; };
 		63EC7ED01CB67C7200616634 /* SVPullToRefresh.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SVPullToRefresh.framework; path = "../../../../../../Library/Developer/Xcode/DerivedData/TBCore-eyjftrbesuhakhahhjuinatwamwu/Build/Products/Debug-iphoneos/SVPullToRefresh.framework"; sourceTree = "<group>"; };
 		7D063B768E4EC017DB8AD20D /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../README.md; sourceTree = "<group>"; };
@@ -157,13 +160,15 @@
 		6003F593195388D20070C39A /* Example for TBCore */ = {
 			isa = PBXGroup;
 			children = (
+				6003F5A8195388D20070C39A /* Images.xcassets */,
+				873B8AEA1B1F5CCA007FD442 /* Main.storyboard */,
+				6003F594195388D20070C39A /* Supporting Files */,
 				6003F59C195388D20070C39A /* TBAppDelegate.h */,
 				6003F59D195388D20070C39A /* TBAppDelegate.m */,
-				873B8AEA1B1F5CCA007FD442 /* Main.storyboard */,
+				63EA73DE1CBF56D1008B3082 /* TBTestCollectionViewController.h */,
+				63EA73DF1CBF56D1008B3082 /* TBTestCollectionViewController.m */,
 				6003F5A5195388D20070C39A /* TBViewController.h */,
 				6003F5A6195388D20070C39A /* TBViewController.m */,
-				6003F5A8195388D20070C39A /* Images.xcassets */,
-				6003F594195388D20070C39A /* Supporting Files */,
 			);
 			name = "Example for TBCore";
 			path = TBCore;
@@ -406,6 +411,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				63EA73E01CBF56D1008B3082 /* TBTestCollectionViewController.m in Sources */,
 				6003F59E195388D20070C39A /* TBAppDelegate.m in Sources */,
 				6003F5A7195388D20070C39A /* TBViewController.m in Sources */,
 				6003F59A195388D20070C39A /* main.m in Sources */,
