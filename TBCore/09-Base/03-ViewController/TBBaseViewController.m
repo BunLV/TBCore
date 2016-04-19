@@ -130,7 +130,7 @@
 
 - (void)tb_dealloc
 {
-    
+    TBLog(@"%@ dealloc", NSStringFromClass([self class]));
 }
 
 #pragma mark + Appear

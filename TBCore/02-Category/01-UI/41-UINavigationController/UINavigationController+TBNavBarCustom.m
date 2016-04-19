@@ -19,10 +19,6 @@
     // View background
     UIView *viewNavBar = view;
     
-    // Set background color
-    self.navigationBar.barTintColor = viewNavBar.backgroundColor;
-    viewNavBar.backgroundColor = [UIColor clearColor];
-    
     CGRect frame = self.navigationBar.frame;
     frame.origin.x = 0.f;
     frame.origin.y = 0.f;

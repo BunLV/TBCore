@@ -18,4 +18,11 @@
     return viewController;
 }
 
+- (id)tb_getViewControllerWithClassName:(NSString *)_className
+{
+    UIViewController *viewController = [self instantiateViewControllerWithIdentifier:_className];
+    
+    return viewController;
+}
+
 @end

@@ -12,5 +12,6 @@
 
 #pragma mark - Get
 - (id)tb_getViewControllerWithClass:(Class)_class;
+- (id)tb_getViewControllerWithClassName:(NSString *)_className;
 
 @end
