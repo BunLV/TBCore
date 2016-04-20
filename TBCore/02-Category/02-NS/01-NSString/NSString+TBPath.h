@@ -10,7 +10,10 @@
 
 @interface NSString (TBPath)
 
+#pragma mark - Get path directory
++ (NSString *)tb_pathDirectoryCaseDocument;
+
 #pragma mark - Get path file
-- (NSString *)tb_pathFileCaseDocumentDirectory;
++ (NSString *)tb_pathFileCaseDocumentDirectory:(NSString *)_fileName;
 
 @end

@@ -11,9 +11,9 @@
 @interface NSString (TBConvert)
 
 #pragma mark - Number to String
-- (NSString *)tb_stringFromInteger:(NSInteger)_valueConvert;
-- (NSString *)tb_stringFromFloat:(float)_valueConvert;
-- (NSString *)tb_stringFromDouble:(double)_valueConvert;
-- (NSString *)tb_stringFromBool:(BOOL)_valueConvert;
++ (NSString *)tb_stringFromInteger:(NSInteger)_valueConvert;
++ (NSString *)tb_stringFromFloat:(float)_valueConvert;
++ (NSString *)tb_stringFromDouble:(double)_valueConvert;
++ (NSString *)tb_stringFromBool:(BOOL)_valueConvert;
 
 @end

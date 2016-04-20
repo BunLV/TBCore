@@ -11,16 +11,27 @@
 @implementation NSString (TBPath)
 
 #pragma mark - Private
-- (NSURL *)applicationDocumentsDirectory:(NSSearchPathDirectory)_searchPathDirectory
++ (NSURL *)tb_applicationDirectory:(NSSearchPathDirectory)_searchPathDirectory
 {
-    return [[[NSFileManager defaultManager] URLsForDirectory:_searchPathDirectory inDomains:NSUserDomainMask] lastObject];
+    NSURL *urlDirectory = [[[NSFileManager defaultManager] URLsForDirectory:_searchPathDirectory inDomains:NSUserDomainMask] lastObject];
+    
+    return urlDirectory;
+}
+
+#pragma mark - Get path directory
++ (NSString *)tb_pathDirectoryCaseDocument
+{
+    NSURL *urlDocument = [[self class] tb_applicationDirectory:NSDocumentDirectory];
+    
+    return urlDocument.path;
 }
 
 #pragma mark - Get path file
-- (NSString *)tb_pathFileCaseDocumentDirectory
++ (NSString *)tb_pathFileCaseDocumentDirectory:(NSString *)_fileName
 {
-    NSURL *url = [self applicationDocumentsDirectory:NSDocumentDirectory];
-    url = [url URLByAppendingPathComponent:self];
+    NSString *path = [self tb_pathDirectoryCaseDocument];
+    NSURL *url = [NSURL fileURLWithPath:path];
+    url = [url URLByAppendingPathComponent:_fileName];
     
     return url.path;
 }

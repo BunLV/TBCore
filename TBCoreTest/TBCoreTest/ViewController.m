@@ -25,6 +25,8 @@
     TB_ALLOW_WARNINGS(
         
     );
+    
+    NSString *abc = [NSString tb_pathFileCaseDocumentDirectory:@"ABC.xml"];
 }
 
 - (void)didReceiveMemoryWarning {

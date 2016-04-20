@@ -13,6 +13,9 @@
 		63028D0A1CB518BD00682FBD /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 63028D081CB518BD00682FBD /* Main.storyboard */; };
 		63028D0C1CB518BD00682FBD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 63028D0B1CB518BD00682FBD /* Assets.xcassets */; };
 		63028D0F1CB518BD00682FBD /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 63028D0D1CB518BD00682FBD /* LaunchScreen.storyboard */; };
+		636864221CC73AB500671304 /* TBBaseCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 6368641F1CC73AB500671304 /* TBBaseCollectionViewCell.m */; };
+		636864231CC73AB500671304 /* UICollectionViewCell+TBBaseCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 636864211CC73AB500671304 /* UICollectionViewCell+TBBaseCollectionViewCell.m */; };
+		636864261CC73ABF00671304 /* TBBaseCollectionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 636864251CC73ABF00671304 /* TBBaseCollectionViewController.m */; };
 		63C98C6E1CB767D4008C197E /* UIColor+TBCore.m in Sources */ = {isa = PBXBuildFile; fileRef = 63C98BF71CB767D4008C197E /* UIColor+TBCore.m */; };
 		63C98C6F1CB767D4008C197E /* UIColor+TBHex.m in Sources */ = {isa = PBXBuildFile; fileRef = 63C98BF91CB767D4008C197E /* UIColor+TBHex.m */; };
 		63C98C701CB767D4008C197E /* UIFont+TBCore.m in Sources */ = {isa = PBXBuildFile; fileRef = 63C98BFD1CB767D4008C197E /* UIFont+TBCore.m */; };
@@ -72,6 +75,12 @@
 		63028D0B1CB518BD00682FBD /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		63028D0E1CB518BD00682FBD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		63028D101CB518BD00682FBD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		6368641E1CC73AB500671304 /* TBBaseCollectionViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TBBaseCollectionViewCell.h; sourceTree = "<group>"; };
+		6368641F1CC73AB500671304 /* TBBaseCollectionViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TBBaseCollectionViewCell.m; sourceTree = "<group>"; };
+		636864201CC73AB500671304 /* UICollectionViewCell+TBBaseCollectionViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UICollectionViewCell+TBBaseCollectionViewCell.h"; sourceTree = "<group>"; };
+		636864211CC73AB500671304 /* UICollectionViewCell+TBBaseCollectionViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UICollectionViewCell+TBBaseCollectionViewCell.m"; sourceTree = "<group>"; };
+		636864241CC73ABF00671304 /* TBBaseCollectionViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TBBaseCollectionViewController.h; sourceTree = "<group>"; };
+		636864251CC73ABF00671304 /* TBBaseCollectionViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TBBaseCollectionViewController.m; sourceTree = "<group>"; };
 		63C98BF01CB767D4008C197E /* TB-Header-Define.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "TB-Header-Define.h"; sourceTree = "<group>"; };
 		63C98BF11CB767D4008C197E /* TBDefineCore.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TBDefineCore.h; sourceTree = "<group>"; };
 		63C98BF51CB767D4008C197E /* TB-Header-UIColor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "TB-Header-UIColor.h"; sourceTree = "<group>"; };
@@ -529,10 +538,14 @@
 		63C98C601CB767D4008C197E /* 02-View */ = {
 			isa = PBXGroup;
 			children = (
+				6368641E1CC73AB500671304 /* TBBaseCollectionViewCell.h */,
+				6368641F1CC73AB500671304 /* TBBaseCollectionViewCell.m */,
 				63C98C611CB767D4008C197E /* TBBaseTableViewCell.h */,
 				63C98C621CB767D4008C197E /* TBBaseTableViewCell.m */,
 				63C98C631CB767D4008C197E /* TBBaseView.h */,
 				63C98C641CB767D4008C197E /* TBBaseView.m */,
+				636864201CC73AB500671304 /* UICollectionViewCell+TBBaseCollectionViewCell.h */,
+				636864211CC73AB500671304 /* UICollectionViewCell+TBBaseCollectionViewCell.m */,
 				63C98C651CB767D4008C197E /* UITableViewCell+TBBaseTableViewCell.h */,
 				63C98C661CB767D4008C197E /* UITableViewCell+TBBaseTableViewCell.m */,
 			);
@@ -542,6 +555,8 @@
 		63C98C671CB767D4008C197E /* 03-ViewController */ = {
 			isa = PBXGroup;
 			children = (
+				636864241CC73ABF00671304 /* TBBaseCollectionViewController.h */,
+				636864251CC73ABF00671304 /* TBBaseCollectionViewController.m */,
 				63C98C681CB767D4008C197E /* TBBaseTableViewController.h */,
 				63C98C691CB767D4008C197E /* TBBaseTableViewController.m */,
 				63C98C6A1CB767D4008C197E /* TBBaseViewController.h */,
@@ -701,6 +716,7 @@
 				63028D071CB518BD00682FBD /* ViewController.m in Sources */,
 				63C98C861CB767D4008C197E /* NSDictionary+TBObject.m in Sources */,
 				63C98C711CB767D4008C197E /* UIView+TBBorder.m in Sources */,
+				636864221CC73AB500671304 /* TBBaseCollectionViewCell.m in Sources */,
 				63C98C701CB767D4008C197E /* UIFont+TBCore.m in Sources */,
 				63C98C841CB767D4008C197E /* NSString+TBUrl.m in Sources */,
 				63C98C961CB767D4008C197E /* TBBaseViewController.m in Sources */,
@@ -714,6 +730,7 @@
 				63C98C921CB767D4008C197E /* TBBaseTableViewCell.m in Sources */,
 				63C98C811CB767D4008C197E /* NSString+TBConvert.m in Sources */,
 				63C98C7F1CB767D4008C197E /* NSString+TBChange.m in Sources */,
+				636864231CC73AB500671304 /* UICollectionViewCell+TBBaseCollectionViewCell.m in Sources */,
 				63C98C8F1CB767D4008C197E /* TBService.m in Sources */,
 				63C98C721CB767D4008C197E /* UIView+TBCore.m in Sources */,
 				63028D011CB518BD00682FBD /* main.m in Sources */,
@@ -742,6 +759,7 @@
 				63C98C7A1CB767D4008C197E /* UIAlertView+TBBlock.m in Sources */,
 				63C98C6F1CB767D4008C197E /* UIColor+TBHex.m in Sources */,
 				63C98C761CB767D4008C197E /* UIView+TBTag.m in Sources */,
+				636864261CC73ABF00671304 /* TBBaseCollectionViewController.m in Sources */,
 				63C98C871CB767D4008C197E /* NSMutableDictionary+TBObject.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

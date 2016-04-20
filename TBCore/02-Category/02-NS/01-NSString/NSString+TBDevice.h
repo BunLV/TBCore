@@ -12,6 +12,6 @@
 @interface NSString (TBDevice)
 
 #pragma mark - Get
-- (NSString *)tb_UUIDString;
++ (NSString *)tb_UUIDString;
 
 @end

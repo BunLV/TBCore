@@ -11,7 +11,7 @@
 @implementation NSString (TBDevice)
 
 #pragma mark - Get
-- (NSString *)tb_UUIDString
++ (NSString *)tb_UUIDString
 {
     return [[[UIDevice currentDevice] identifierForVendor] UUIDString];
 }
