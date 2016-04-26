@@ -6,6 +6,8 @@
 //  Copyright © 2016 Bun Le Viet. All rights reserved.
 //
 
+#import <MBProgressHUD/MBProgressHUD.h>
+
 #import "UIViewController+TBCore.h"
 
 #import "TB-Header-Define.h"
@@ -32,6 +34,39 @@
     }
     
     return topMostVC;
+}
+
+#pragma mark - Present + dismiss
+- (void)tb_presentViewController:(UIViewController *)viewControllerToPresent animated:(BOOL)flag completion:(void (^)(void))completion
+{
+    [MBProgressHUD showHUDAddedTo:self.view animated:YES];
+    
+    __weak typeof(self) blockSelf = self;
+    [self presentViewController:viewControllerToPresent animated:flag completion:^{
+        
+        if ( completion )
+        {
+            completion ();
+        }
+        
+        [MBProgressHUD hideAllHUDsForView:blockSelf.view animated:YES];
+    }];
+}
+
+- (void)tb_dismissViewControllerAnimated:(BOOL)flag completion:(void (^)(void))completion
+{
+    [MBProgressHUD showHUDAddedTo:self.view animated:YES];
+    
+    __weak typeof(self) blockSelf = self;
+    [self dismissViewControllerAnimated:flag completion:^{
+        
+        if ( completion )
+        {
+            completion ();
+        }
+        
+        [MBProgressHUD hideAllHUDsForView:blockSelf.view animated:YES];
+    }];
 }
 
 @end

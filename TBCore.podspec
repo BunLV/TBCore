@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = "TBCore"
-  s.version          = "0.1.1"
+  s.version          = "0.1.2"
   s.summary          = "TBCore is a iOS framework. You have beauty project and stable. It will down time development for you"
   s.description      = "TBCore allows configure & create base to any iOS Project. Below are services needed to be implement basic funtion. so it's help to you can write short code and meanable. So you will the clear source code"
   s.homepage         = "https://github.com/BunLV/TBCore"
@@ -42,5 +42,6 @@ Pod::Spec.new do |s|
 # - - - - - - - - - - - - - - - - - - - - - - - Dependencies - - - - - - - - - - - - - - - - - - - - - - -
   s.dependency 'AFNetworking'
   s.dependency 'SVPullToRefresh'
+  s.dependency 'MBProgressHUD'
 
 end

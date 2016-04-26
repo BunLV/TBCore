@@ -14,4 +14,9 @@
 - (UIViewController *)tb_rootViewController;
 - (UIViewController *)tb_topMostViewController;
 
+#pragma mark - Present + dismiss
+- (void)tb_presentViewController:(UIViewController *)viewControllerToPresent animated:(BOOL)flag completion:(void (^)(void))completion;
+
+- (void)tb_dismissViewControllerAnimated:(BOOL)flag completion:(void (^)(void))completion;
+
 @end

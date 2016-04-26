@@ -85,11 +85,13 @@ strip_invalid_archs() {
 
 if [[ "$CONFIGURATION" == "Debug" ]]; then
   install_framework "Pods-TBCore_Example/AFNetworking.framework"
+  install_framework "Pods-TBCore_Example/MBProgressHUD.framework"
   install_framework "Pods-TBCore_Example/SVPullToRefresh.framework"
   install_framework "Pods-TBCore_Example/TBCore.framework"
 fi
 if [[ "$CONFIGURATION" == "Release" ]]; then
   install_framework "Pods-TBCore_Example/AFNetworking.framework"
+  install_framework "Pods-TBCore_Example/MBProgressHUD.framework"
   install_framework "Pods-TBCore_Example/SVPullToRefresh.framework"
   install_framework "Pods-TBCore_Example/TBCore.framework"
 fi
