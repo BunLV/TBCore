@@ -10,6 +10,7 @@
 
 @interface UILabel (TBResize)
 
-- (CGSize)tb_sizeOfMultiLineLabel;
+- (CGFloat)tb_widthOfText;
+- (CGFloat)tb_heightOfText;
 
 @end
