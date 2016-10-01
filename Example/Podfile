@@ -1,11 +1,11 @@
 source 'https://github.com/CocoaPods/Specs.git'
 use_frameworks!
 
-target 'TBCore_Example', :exclusive => true do
+target 'TBCore_Example' do
   pod 'TBCore', :path => '../'
 end
 
-target 'TBCore_Tests', :exclusive => true do
+target 'TBCore_Tests' do
   pod 'TBCore', :path => '../'
 
   
