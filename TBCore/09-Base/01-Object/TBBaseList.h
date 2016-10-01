@@ -13,6 +13,9 @@
 
 @interface TBBaseList : TBBaseObject
 
-@property (strong, nonatomic) NSMutableArray *arrDataList;
+@property (strong, nonatomic) NSMutableArray *arrData;
+
+- (NSArray *)tb_getInfoForArray;
+- (void)tb_setInfoWithArray:(NSArray *)arrData;
 
 @end

@@ -10,6 +10,14 @@
 
 @implementation TBBaseList
 
+#pragma mark - Copying
+- (id)copyWithZone:(NSZone *)zone
+{
+    TBBaseList *baseList = [[TBBaseList alloc] init];
+    
+    return baseList;
+}
+
 #pragma mark -
 - (instancetype)init
 {
@@ -17,50 +25,25 @@
     
     if ( self )
     {
-        self.arrDataList = [NSMutableArray new];
+        self.arrData = [NSMutableArray new];
     }
     
     return self;
 }
 
-- (instancetype)initWithCoder:(NSCoder *)aDecoder
+- (void)tb_dealloc
 {
-    self = [super initWithCoder:aDecoder];
-    
-    if ( self )
-    {
-        
-    }
-    
-    return self;
-}
-
-- (void)encodeWithCoder:(NSCoder *)aCoder
-{
-    [super encodeWithCoder:aCoder];
-    
-    
+    [super tb_dealloc];
 }
 
 #pragma mark -
-- (void)setInfoWithDictionary:(NSDictionary *)dictData
+- (NSArray *)tb_getInfoForArray
 {
-    [super tb_setInfoWithDictionary:dictData];
-    
-    @try {
-        
-        
-    }
-    @catch (NSException *exception) {
-        
-        NSLog(@"Exception: %@", exception.description);
-    }
+    return [NSArray new];
 }
 
-- (void)setInfoWithArray:(NSArray *)arrData
+- (void)tb_setInfoWithArray:(NSArray *)arrData
 {
-    [super tb_setInfoWithArray:arrData];
-    
     @try {
         
         

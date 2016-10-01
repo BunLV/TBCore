@@ -30,11 +30,11 @@
                                  attributes:@{
                                               NSFontAttributeName:textFont
                                               }
-                                    context:nil].size.height;
+                                    context:nil].size.width;
 #else
     return [textString sizeWithFont:textFont
                   constrainedToSize:CGSizeMake(MAXFLOAT, heightOfLabel)
-                      lineBreakMode:NSLineBreakByWordWrapping].height;
+                      lineBreakMode:NSLineBreakByWordWrapping].width;
 #endif
     
     return [self bounds].size.height;

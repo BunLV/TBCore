@@ -1,1 +1,21 @@
-../../../../../TBCore/09-Base/01-Object/TBBaseList.h
+//
+//  TBBaseList.h
+//  TBCoreTest
+//
+//  Created by Bun Le Viet on 4/7/16.
+//  Copyright © 2016 Bun Le Viet. All rights reserved.
+//
+
+#import "TBBaseObject.h"
+
+#define TB_OFF_SET_FIRST 1
+#define TB_LIMITED 20
+
+@interface TBBaseList : TBBaseObject
+
+@property (strong, nonatomic) NSMutableArray *arrData;
+
+- (NSArray *)tb_getInfoForArray;
+- (void)tb_setInfoWithArray:(NSArray *)arrData;
+
+@end

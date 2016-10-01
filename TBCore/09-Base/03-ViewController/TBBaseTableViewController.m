@@ -78,7 +78,7 @@
 {
     TBBaseObject *object = [self.arrData objectAtIndex:indexPath.row];
     
-    NSString *cellIdentifier = object.cellIdentifier;
+    NSString *cellIdentifier = object.tb_cellIdentifier;
     
     UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:cellIdentifier];
     
@@ -107,7 +107,7 @@
 {
     TBBaseObject *object = [self.arrData objectAtIndex:indexPath.row];
     
-    return object.cellHeight;
+    return object.tb_cellHeight;
 }
 
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath

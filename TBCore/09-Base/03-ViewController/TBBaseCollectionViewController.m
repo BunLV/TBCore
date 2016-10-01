@@ -77,7 +77,7 @@
 {
     TBBaseObject *object = [self.arrData tb_objectAtIndex:indexPath.row];
     
-    NSString *cellIdentifier = object.cellIdentifier;
+    NSString *cellIdentifier = object.tb_cellIdentifier;
     
     UICollectionViewCell *cell = [collectionView dequeueReusableCellWithReuseIdentifier:cellIdentifier forIndexPath:indexPath];
     

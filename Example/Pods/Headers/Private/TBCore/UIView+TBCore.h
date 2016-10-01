@@ -1,1 +1,13 @@
-../../../../../TBCore/02-Category/01-UI/20-UIView/UIView+TBCore.h
+//
+//  UIView+TBCore.h
+//  TBCoreTest
+//
+//  Created by Bun Le Viet on 4/6/16.
+//  Copyright © 2016 Bun Le Viet. All rights reserved.
+//
+
+#import <UIKit/UIKit.h>
+
+@interface UIView (TBCore)
+
+@end

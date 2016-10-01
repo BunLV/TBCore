@@ -7,6 +7,7 @@
 //
 
 #import <Foundation/Foundation.h>
+#import "TBDefineCore.h"
 
 #define TB_DATE_MINUTE                      60
 #define TB_DATE_HOUR                        3600
@@ -22,10 +23,17 @@
 
 #define TB_CURRENT_CALENDAR                 [NSCalendar currentCalendar]
 
-#define TB_DATE_COMPONENTS                  (NSYearCalendarUnit | NSMonthCalendarUnit | NSDayCalendarUnit | NSWeekCalendarUnit | NSHourCalendarUnit | NSMinuteCalendarUnit | NSSecondCalendarUnit | NSWeekdayCalendarUnit | NSWeekdayOrdinalCalendarUnit)
-#define TB_DATE_COMPONENTS_CASE_WEEK        (NSWeekdayCalendarUnit)
-#define TB_DATE_COMPONENTS_CASE_MONTH       (NSYearCalendarUnit | NSMonthCalendarUnit)
-#define TB_DATE_COMPONENTS_CASE_YEAR        (NSYearCalendarUnit)
+#ifdef TB_DETECT_IOS_8_X // iOS 8.0+
+#   define TB_DATE_COMPONENTS                  (NSCalendarUnitYear | NSCalendarUnitMonth | NSCalendarUnitDay | NSCalendarUnitWeekOfYear | NSCalendarUnitHour | NSCalendarUnitMinute | NSCalendarUnitSecond | NSCalendarUnitWeekday | NSCalendarUnitWeekdayOrdinal)
+#   define TB_DATE_COMPONENTS_CASE_WEEK        (NSCalendarUnitWeekday)
+#   define TB_DATE_COMPONENTS_CASE_MONTH       (NSCalendarUnitYear | NSCalendarUnitMonth)
+#   define TB_DATE_COMPONENTS_CASE_YEAR        (NSCalendarUnitYear)
+#else // iOS 8.0-
+#   define TB_DATE_COMPONENTS                  (NSYearCalendarUnit | NSMonthCalendarUnit | NSDayCalendarUnit | NSWeekCalendarUnit | NSHourCalendarUnit | NSMinuteCalendarUnit | NSSecondCalendarUnit | NSWeekdayCalendarUnit | NSWeekdayOrdinalCalendarUnit)
+#   define TB_DATE_COMPONENTS_CASE_WEEK        (NSWeekdayCalendarUnit)
+#   define TB_DATE_COMPONENTS_CASE_MONTH       (NSYearCalendarUnit | NSMonthCalendarUnit)
+#   define TB_DATE_COMPONENTS_CASE_YEAR        (NSYearCalendarUnit)
+#endif
 
 @interface NSDate (TBCore)
 

@@ -7,7 +7,6 @@
 //
 
 #import <SVPullToRefresh/SVPullToRefresh.h>
-
 #import "TBBaseViewController.h"
 
 @interface TBBaseTableViewController : TBBaseViewController
