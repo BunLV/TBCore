@@ -16,6 +16,6 @@
 - (void)tb_removeDelegate:(id)delegate;
 - (void)tb_removeAllDelegate;
 
-- (void)td_responds:(void(^)(id delegate))block;
+- (void)tb_responds:(void(^)(id delegate))block;
 
 @end

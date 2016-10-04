@@ -11,8 +11,8 @@
 @interface UIViewController (TBCore)
 
 #pragma mark - Get
-- (UIViewController *)tb_rootViewController;
-- (UIViewController *)tb_topMostViewController;
++ (UIViewController *)tb_rootViewController;
++ (UIViewController *)tb_topMostViewController;
 
 #pragma mark - Present + dismiss
 - (void)tb_presentViewController:(UIViewController *)viewControllerToPresent animated:(BOOL)flag completion:(void (^)(void))completion;

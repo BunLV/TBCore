@@ -16,7 +16,7 @@ PODS:
     - AFNetworking/NSURLSession
   - MBProgressHUD (1.0.0)
   - SVPullToRefresh (0.4.1)
-  - TBCore (1.0.5):
+  - TBCore (1.0.6):
     - AFNetworking
     - MBProgressHUD
     - SVPullToRefresh
@@ -32,7 +32,7 @@ SPEC CHECKSUMS:
   AFNetworking: 5e0e199f73d8626b11e79750991f5d173d1f8b67
   MBProgressHUD: 4890f671c94e8a0f3cf959aa731e9de2f036d71a
   SVPullToRefresh: ba2e718695a43253d8bea6852d2960097dc15d8c
-  TBCore: 2c833cca13a51df1b946e5f181db99f7cb4801b7
+  TBCore: cc63c1f92c24e039b55e570ccf66726637d3e32d
 
 PODFILE CHECKSUM: 520fbca0b880333d6ecfeedf708617b6b418c2b5
 

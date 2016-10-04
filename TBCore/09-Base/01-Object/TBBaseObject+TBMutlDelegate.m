@@ -62,7 +62,7 @@
 }
 
 #pragma mark - Responds
-- (void)td_responds:(void(^)(id delegate))block
+- (void)tb_responds:(void(^)(id delegate))block
 {
     NSArray *arrData = [self.arrDelegate copy];
     for ( id object in arrData )

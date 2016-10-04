@@ -90,12 +90,12 @@ _Pragma("clang diagnostic pop")
 
 
 //
-#define TB_WEAK(var) __weak typeof(var) TD_WEAK_##var = var;
+#define TB_WEAK(var) __weak typeof(var) TB_WEAK_##var = var;
 
 #define TB_STRONG(var)  \
 _Pragma("clang diagnostic push")    \
 _Pragma("clang diagnostic ignored \"-Wshadow\"")    \
-    __strong typeof(var) var = TD_WEAK_##var;   \
+    __strong typeof(var) var = TB_WEAK_##var;   \
 _Pragma("clang diagnostic pop")
 
 #endif

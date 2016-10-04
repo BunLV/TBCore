@@ -9,13 +9,12 @@
 #import <MBProgressHUD/MBProgressHUD.h>
 
 #import "UIViewController+TBCore.h"
-
 #import "TB-Header-Define.h"
 
 @implementation UIViewController (TBCore)
 
 #pragma mark - Get
-- (UIViewController *)tb_rootViewController
++ (UIViewController *)tb_rootViewController
 {
     UIWindow *window = [[[UIApplication sharedApplication] windows] objectAtIndex:0];
     UIViewController *rootVC = window.rootViewController;
@@ -23,7 +22,7 @@
     return rootVC;
 }
 
-- (UIViewController *)tb_topMostViewController
++ (UIViewController *)tb_topMostViewController
 {
     UIWindow *window = [[[UIApplication sharedApplication] windows] objectAtIndex:0];
     UIViewController *topMostVC = window.rootViewController;
