@@ -146,6 +146,11 @@
     [self loadDataWithOffSet:TB_OFF_SET_FIRST];
 }
 
+- (void)stopRefreshAnimating
+{
+    [self.tbvData.pullToRefreshView stopAnimating];
+}
+
 - (void)addPullToLoadMore
 {
     __weak typeof(self) blockSelf = self;
@@ -159,6 +164,17 @@
 - (void)processForLoadMore
 {
     TBLog(@"Need overwriter");
+}
+
+- (void)stopLoadMoreAnimating
+{
+    [self.tbvData.infiniteScrollingView stopAnimating];
+}
+
+#pragma mark + Utils
+- (void)registerCellWithClass:(Class)className
+{
+    [self.tbvData registerNib:[UINib nibWithNibName:NSStringFromClass(className) bundle:nil] forCellReuseIdentifier:NSStringFromClass(className)];
 }
 
 #pragma mark - Data

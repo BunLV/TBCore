@@ -26,9 +26,14 @@
 #pragma mark + SVPullToRefresh
 - (void)addPullToRefresh;
 - (void)processForRefresh;
+- (void)stopRefreshAnimating;
 
 - (void)addPullToLoadMore;
 - (void)processForLoadMore;
+- (void)stopLoadMoreAnimating;
+
+#pragma mark + Utils
+- (void)registerCellWithClass:(Class)className;
 
 #pragma mark - Data
 - (void)reloadData;

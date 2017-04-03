@@ -46,6 +46,7 @@ typedef void(^tb_serviceOnFailure)(NSURLSessionDataTask * _Nullable sessionDataT
        withHeaderParams:(NSDictionary * _Nullable)dictHeaderParams
                withData:(NSData * _Nullable)data withName:(NSString * _Nullable)name withFileName:(NSString * _Nullable)fileName withMimeType:(NSString * _Nullable)mimeType
                 success:(tb_serviceOnSuccess _Nullable)success
-                failure:(tb_serviceOnFailure _Nullable)failure;
+                failure:(tb_serviceOnFailure _Nullable)failure
+               progress:(nullable void (^)(NSProgress * _Nonnull))uploadProgress;
 
 @end

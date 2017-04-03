@@ -98,7 +98,7 @@
         {
             NSURLSessionDataTask *dataTask = [self.sessionManager GET:path parameters:dictParams progress:nil success:^(NSURLSessionTask *task, id responseObject) {
                 
-                [blockSelf successWithPath:path withSessionTask:task withResponseData:UIUserNotificationActionResponseTypedTextKey onSuccess:success];
+                [blockSelf successWithPath:path withSessionTask:task withResponseData:responseObject onSuccess:success];
                 
             } failure:^(NSURLSessionTask *task, NSError *error) {
                 
@@ -114,7 +114,7 @@
         {
             NSURLSessionDataTask *dataTask = [self.sessionManager POST:path parameters:dictParams progress:nil success:^(NSURLSessionTask *task, id responseObject) {
                 
-                [blockSelf successWithPath:path withSessionTask:task withResponseData:UIUserNotificationActionResponseTypedTextKey onSuccess:success];
+                [blockSelf successWithPath:path withSessionTask:task withResponseData:responseObject onSuccess:success];
                 
             } failure:^(NSURLSessionTask *task, NSError *error) {
                 
@@ -130,7 +130,7 @@
         {
             NSURLSessionDataTask *dataTask = [self.sessionManager PUT:path parameters:dictParams success:^(NSURLSessionTask *task, id responseObject) {
                 
-                [blockSelf successWithPath:path withSessionTask:task withResponseData:UIUserNotificationActionResponseTypedTextKey onSuccess:success];
+                [blockSelf successWithPath:path withSessionTask:task withResponseData:responseObject onSuccess:success];
                 
             } failure:^(NSURLSessionTask *task, NSError *error) {
                 
@@ -146,7 +146,7 @@
         {
             NSURLSessionDataTask *dataTask = [self.sessionManager DELETE:path parameters:dictParams success:^(NSURLSessionTask *task, id responseObject) {
                 
-                [blockSelf successWithPath:path withSessionTask:task withResponseData:UIUserNotificationActionResponseTypedTextKey onSuccess:success];
+                [blockSelf successWithPath:path withSessionTask:task withResponseData:responseObject onSuccess:success];
                 
             } failure:^(NSURLSessionTask *task, NSError *error) {
                 
@@ -173,6 +173,7 @@
                withData:(NSData * _Nullable)data withName:(NSString * _Nullable)name withFileName:(NSString * _Nullable)fileName withMimeType:(NSString * _Nullable)mimeType
                 success:(tb_serviceOnSuccess _Nullable)success
                 failure:(tb_serviceOnFailure _Nullable)failure
+               progress:(nullable void (^)(NSProgress * _Nonnull))uploadProgress
 {
     NSLog(@"- - - - - - - - - - - - - - - - - - - - - - - - - - Request start - - - - - - - - - - - - - - - - - - - - - - - - - -");
     NSLog(@"Request url: %@", [NSURL URLWithString:path relativeToURL:[NSURL URLWithString:SERVICE_BASE_URL]]);
@@ -194,9 +195,9 @@
         
         [formData appendPartWithFileData:data name:name fileName:fileName mimeType:mimeType];
         
-    } progress:nil success:^(NSURLSessionDataTask *task, id responseObject) {
+    } progress:uploadProgress success:^(NSURLSessionDataTask *task, id responseObject) {
         
-        [blockSelf successWithPath:path withSessionTask:task withResponseData:UIUserNotificationActionResponseTypedTextKey onSuccess:success];
+        [blockSelf successWithPath:path withSessionTask:task withResponseData:responseObject onSuccess:success];
         
     } failure:^(NSURLSessionDataTask *task, NSError *error) {
         
@@ -217,6 +218,8 @@
     {
         success ([task copy], responseData);
     }
+    
+    [self.arrDataTasks removeObject:task];
 }
 
 - (void)failureWithPath:(NSString *)path withSessionTask:(NSURLSessionTask *)task withError:(NSError *)error onFailure:(tb_serviceOnFailure)failure
@@ -229,6 +232,8 @@
     {
         failure ([task copy], error);
     }
+    
+    [self.arrDataTasks removeObject:task];
 }
 
 #pragma mark - Params
